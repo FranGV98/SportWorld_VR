@@ -17,8 +17,36 @@ public class MenuController : MonoBehaviour
         
     }
 
-    public void StartBtn()
+
+    //SCENE MANAGEMENT
+    public void LoadHub()
+    {
+        SceneManager.LoadScene("Hub");
+    }
+
+    public void LoadLegGame()
+    {
+        SceneManager.LoadScene("LegMinigame");
+    }
+
+    public void LoadRacketGame()
     {
 
+    }
+
+    public void LoadBoxingGame()
+    {
+
+    }
+
+    //PAUSE MENU
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
+
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }
