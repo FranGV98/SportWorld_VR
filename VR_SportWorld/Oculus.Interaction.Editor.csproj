@@ -63,6 +63,7 @@
      <Compile Include="Assets\Oculus\Interaction\Editor\PoseDetection\FeatureStateThresholdsEditor.cs" />
      <Compile Include="Assets\Oculus\Interaction\Editor\PoseDetection\JointRotationFeatureConfigEditor.cs" />
      <Compile Include="Assets\Oculus\Interaction\Editor\Grab\HandGrab\HandGrabPoseEditor.cs" />
+     <Compile Include="Assets\Oculus\Interaction\Editor\Grab\HandGrab\HandGrabPointEditor.cs" />
      <Compile Include="Assets\Oculus\Interaction\Editor\Utils\ConditionalHideDrawer.cs" />
      <Compile Include="Assets\Oculus\Interaction\Editor\Grab\GrabbingRuleEditor.cs" />
      <Compile Include="Assets\Oculus\Interaction\Editor\Grab\HandGrab\HandGhostProviderUtils.cs" />

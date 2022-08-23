@@ -14,6 +14,7 @@ public class HandPresence_Bhv : MonoBehaviour
     private GameObject spawnedController;
     private GameObject spawnedHandModel;
     private Animator handAnimator;
+
     void Start()
     {
         TryInitialize();
@@ -89,6 +90,8 @@ public class HandPresence_Bhv : MonoBehaviour
                 spawnedHandModel.SetActive(true);
                 spawnedController.SetActive(false);
                 UpdateHandAnimation();
+
+                TennisGameFeatures();
             }
         }      
     }
@@ -109,11 +112,43 @@ public class HandPresence_Bhv : MonoBehaviour
         if (triggerValue > 0.1f)
             Debug.Log(triggerValue);
 
-        targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
+            targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
         if (menuButtonValue)
             OpenPauseMenu();
         //targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
         //if (triggerValue > 0.1f)
         //    Debug.Log(triggerValue);
+    }
+
+    void TennisGameFeatures()
+    {
+        targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
+        if (triggerValue > 0.1f)
+        {
+            GameObject _go_Racket;
+
+            if (targetDevice.name == "Oculus Touch Controller - Left")
+            {
+                _go_Racket = GameObject.Find("RedRacket");
+            }
+            else
+            {
+                _go_Racket = GameObject.Find("BlueRacket");
+            }
+
+            Vector3 handPos = transform.position;
+            _go_Racket.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            //RedRacket.transform.LookAt(handPos);
+            _go_Racket.transform.position = Vector3.MoveTowards(_go_Racket.transform.position, handPos, triggerValue * 10 * Time.deltaTime);
+        }
+
+
+        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+        if (primaryButtonValue)
+        {
+            GameObject Ball = GameObject.Find("RedSphere");
+            Ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            Ball.transform.position = Vector3.MoveTowards(Ball.transform.position, transform.position,  10 * Time.deltaTime);
+        }
     }
 }

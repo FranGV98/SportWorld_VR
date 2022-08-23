@@ -8,12 +8,12 @@ public class JSON_Writter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SportPlayer player_1 = new SportPlayer();
-        player_1.name = "User 1";
-        player_1.weight = 85.5F;
-        player_1.UID = 1;
+        //SportPlayer player_1 = new SportPlayer();
+        //player_1.name = "User 1";
+        //player_1.weight = 85.5F;
+        //player_1.UID = 1;
 
-        SavePlayerToJson(player_1);
+        //SavePlayerToJson(player_1);
     }
 
     // Update is called once per frame
@@ -28,9 +28,10 @@ public class JSON_Writter : MonoBehaviour
         File.WriteAllText(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json", json);
     }
 
-    public void LoadPlayerFromJson(SportPlayer _player)
+    public SportPlayer LoadPlayerFromJson()
     {
         string json = File.ReadAllText(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json");
-        _player = JsonUtility.FromJson<SportPlayer>(json);
+        SportPlayer _player = JsonUtility.FromJson<SportPlayer>(json);
+        return _player;
     }
 }

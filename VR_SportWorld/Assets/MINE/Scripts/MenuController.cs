@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    public GameObject _player;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +44,13 @@ public class MenuController : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
+        if(_player != null)
+        {
+            if (_player.GetComponent<Player_Blocks>() != null)
+                _player.GetComponent<Player_Blocks>().go_pauseScreen.SetActive(false);
+
+
+        }
     }
 
     public void LoadScene(string scene)

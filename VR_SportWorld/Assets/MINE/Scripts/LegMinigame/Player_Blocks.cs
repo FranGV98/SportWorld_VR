@@ -1,29 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
 public class Player_Blocks : MonoBehaviour
 {
     private int int_score;
-    private float fl_timer;
+    private float fl_timer, fl_kcal;
     public Text text_score, text_state, text_timer;
-    public GameObject StartScreen;
+    public Text text_endscore, text_endtime, text_endkcal;
+    public GameObject go_pauseScreen, go_endScreen;
     private BlockManager _blockManager;
 
-    // Start is called before the first frame update
+    private JSON_Writter _json;
+    private SportPlayer _sportPlayer;
+
     void Start()
     {
         _blockManager = GameObject.Find("Blocks_Manager").GetComponent<BlockManager>();
-        //Time.timeScale = 0;
+        _json = GameObject.Find("MenusManager").GetComponent<JSON_Writter>();
+        _sportPlayer = _json.LoadPlayerFromJson();
+        print(_sportPlayer.TodayBurntKcal);
     }
 
-    // Update is called once per frame
     void Update()
     {
         fl_timer += Time.deltaTime;
         text_timer.text = "Time: " + fl_timer;
+        if(OVRInput.Get(OVRInput.Button.Start))
+        {
+            go_pauseScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -60,6 +70,7 @@ public class Player_Blocks : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Damagable"))
         {
             Destroy(other.gameObject);
+            EndGame();
         }
 
         if(other.gameObject.layer == LayerMask.NameToLayer("Scorer"))
@@ -69,5 +80,21 @@ public class Player_Blocks : MonoBehaviour
             Destroy(other.transform.parent.gameObject);
 
         }
+    }
+
+    void EndGame()
+    {
+        go_endScreen.SetActive(true);
+        Time.timeScale = 0;
+
+        text_endscore.text = "FINAL SCORE: " + int_score;
+        text_endtime.text = "TOTAL TIME: " + fl_timer;
+
+        
+        fl_kcal = (fl_timer / 60) * 5 * 3.5f * (float)_sportPlayer.weight / 200; //MET FORMULA: minutes * MET * 3.5 * Kg / 200
+        text_endkcal.text = "KCAL BURNT: " + (double)fl_kcal;
+
+        _sportPlayer.TodayBurntKcal += fl_kcal;
+        _json.SavePlayerToJson(_sportPlayer);
     }
 }
