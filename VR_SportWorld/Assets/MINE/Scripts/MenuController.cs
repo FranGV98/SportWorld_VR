@@ -46,10 +46,9 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1;
         if(_player != null)
         {
-            if (_player.GetComponent<Player_Blocks>() != null)
-                _player.GetComponent<Player_Blocks>().go_pauseScreen.SetActive(false);
-
-
+            if (_player.GetComponent<InGame_PlayerScore>() != null)
+                _player.GetComponent<InGame_PlayerScore>().go_pauseScreen.SetActive(false);
+                _player.GetComponent<InGame_PlayerScore>().go_uiHelpers.SetActive(false);
         }
     }
 

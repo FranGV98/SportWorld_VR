@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BlockManager : MonoBehaviour
 {
@@ -15,7 +14,6 @@ public class BlockManager : MonoBehaviour
     [HideInInspector] public int int_UpScorerCount, int_DownScorerCount;
     [HideInInspector] public int int_current_color;
 
-    public Text text_Timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +33,7 @@ public class BlockManager : MonoBehaviour
     {      
         fl_spawntimer -= Time.deltaTime;
 
-        float fl_SpawnPos = Random.Range(0.3f, 1.85f/*fl_playerHeigth*/);
+        float fl_SpawnPos = Random.Range(0.3f, fl_playerHeigth);
 
         if (int_UpScorerCount >= 2 || int_DownScorerCount >= 2)  //Avoid having a lot of obstacles in the same heigth
         {

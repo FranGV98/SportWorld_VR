@@ -15,9 +15,13 @@ public class HandPresence_Bhv : MonoBehaviour
     private GameObject spawnedHandModel;
     private Animator handAnimator;
 
+    public InGame_PlayerScore _player;
+
     void Start()
     {
         TryInitialize();
+
+        _player = GameObject.Find("CommonVRPlayer").GetComponent<InGame_PlayerScore>();
     }
 
     void UpdateHandAnimation()
@@ -91,15 +95,23 @@ public class HandPresence_Bhv : MonoBehaviour
                 spawnedController.SetActive(false);
                 UpdateHandAnimation();
 
-                TennisGameFeatures();
+                targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
+                if (menuButtonValue)
+                {
+                    _player.PauseGame();   
+                }
+
+                switch (_player.currentMinigame)
+                {
+                    case InGame_PlayerScore.Minigame.LegGame:
+                        break;
+
+                    case InGame_PlayerScore.Minigame.RacketGame:
+                        TennisGameFeatures();
+                        break;
+                }
             }
         }      
-    }
-
-    void OpenPauseMenu()
-    {
-        //go_pauseMenu.SetActive(true);
-        Time.timeScale = 0;
     }
 
     void DebugControllers()
@@ -112,9 +124,9 @@ public class HandPresence_Bhv : MonoBehaviour
         if (triggerValue > 0.1f)
             Debug.Log(triggerValue);
 
-            targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
-        if (menuButtonValue)
-            OpenPauseMenu();
+        //    targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
+        //if (menuButtonValue)
+        //    OpenPauseMenu();
         //targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
         //if (triggerValue > 0.1f)
         //    Debug.Log(triggerValue);

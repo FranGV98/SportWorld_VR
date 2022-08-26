@@ -18,11 +18,5 @@ public class RacketPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.Start))
-        {
-            Debug.Log("Sida0");
-            Vector3 handPos = RightHand.transform.position;
-            BlueRacket.transform.position = Vector3.MoveTowards(transform.position, handPos, speed * Time.deltaTime);
-        }
     }
 }
