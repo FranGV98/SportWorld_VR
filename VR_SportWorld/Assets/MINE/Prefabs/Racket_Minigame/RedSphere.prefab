@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 3930474720263658842}
   - component: {fileID: 3930474720263658847}
   - component: {fileID: 580302412233215674}
+  - component: {fileID: 7646080469116432231}
   m_Layer: 0
   m_Name: RedSphere
   m_TagString: Untagged
@@ -313,7 +314,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3930474720263658841}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: dab79b178e7a7ff4c804e2e312fc6dae, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -546,3 +547,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7646080469116432231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930474720263658841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6158ad037383824ca62ad0706973ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 4404719055015795780, guid: 3c9e6715e34674140a7da0b2c75d3c6a, type: 3}

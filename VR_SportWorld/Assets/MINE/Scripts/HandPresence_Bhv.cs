@@ -95,21 +95,25 @@ public class HandPresence_Bhv : MonoBehaviour
                 spawnedController.SetActive(false);
                 UpdateHandAnimation();
 
-                targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
-                if (menuButtonValue)
+                if(_player != null)
                 {
-                    _player.PauseGame();   
-                }
+                    targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue);
+                    if (menuButtonValue)
+                    {
+                        _player.PauseGame();
+                    }
 
-                switch (_player.currentMinigame)
-                {
-                    case InGame_PlayerScore.Minigame.LegGame:
-                        break;
+                    switch (_player.currentMinigame)
+                    {
+                        case InGame_PlayerScore.Minigame.LegGame:
+                            break;
 
-                    case InGame_PlayerScore.Minigame.RacketGame:
-                        TennisGameFeatures();
-                        break;
+                        case InGame_PlayerScore.Minigame.RacketGame:
+                            TennisGameFeatures();
+                            break;
+                    }
                 }
+                //else { print("There's no player"); }
             }
         }      
     }

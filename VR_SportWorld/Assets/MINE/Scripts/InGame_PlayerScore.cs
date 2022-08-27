@@ -29,9 +29,8 @@ public class InGame_PlayerScore : MonoBehaviour
     {
         _json = GameObject.Find("MenusManager").GetComponent<JSON_Writter>();
         _sportPlayer = _json.LoadPlayerFromJson();
-        GameObject go_uiHelpers = GameObject.Find("UIHelpers");
 
-        print(_sportPlayer.TodayBurntKcal);
+        //print(_sportPlayer.TodayBurntKcal);
     }
 
     // Update is called once per frame
@@ -47,6 +46,9 @@ public class InGame_PlayerScore : MonoBehaviour
     public void EndGame()
     {
         go_endScreen.SetActive(true);
+        go_pauseScreen.SetActive(false);
+        go_uiHelpers.SetActive(true);
+
         Time.timeScale = 0;
 
         text_endscore.text = "FINAL SCORE: " + int_score;

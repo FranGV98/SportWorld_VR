@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject _player;
+    public InGame_PlayerScore _player;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,22 +22,31 @@ public class MenuController : MonoBehaviour
     //SCENE MANAGEMENT
     public void LoadHub()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Hub");
     }
 
     public void LoadLegGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("LegMinigame");
     }
 
     public void LoadRacketGame()
     {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("TennisMinigame");       
+    }
 
+    public void ReloadGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadBoxingGame()
     {
-
+        Time.timeScale = 1;
     }
 
     //PAUSE MENU
@@ -46,14 +55,8 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1;
         if(_player != null)
         {
-            if (_player.GetComponent<InGame_PlayerScore>() != null)
-                _player.GetComponent<InGame_PlayerScore>().go_pauseScreen.SetActive(false);
-                _player.GetComponent<InGame_PlayerScore>().go_uiHelpers.SetActive(false);
+            _player.go_pauseScreen.SetActive(false);
+            _player.go_uiHelpers.SetActive(false);
         }
-    }
-
-    public void LoadScene(string scene)
-    {
-        SceneManager.LoadScene(scene);
     }
 }

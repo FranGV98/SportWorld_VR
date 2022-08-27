@@ -23,7 +23,7 @@ public class Cannons_Manager : MonoBehaviour
         if (timer > cadence)
         {
             int random = Random.Range(0, 2);
-            print(random);
+            //print(random);
             if(random == 0)
             {
                 RedCannon.MoveTarget();
