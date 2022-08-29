@@ -34,4 +34,5 @@ public class JSON_Writter : MonoBehaviour
         SportPlayer _player = JsonUtility.FromJson<SportPlayer>(json);
         return _player;
     }
+    
 }

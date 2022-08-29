@@ -49,6 +49,8 @@ public class InGame_PlayerScore : MonoBehaviour
         go_pauseScreen.SetActive(false);
         go_uiHelpers.SetActive(true);
 
+
+
         Time.timeScale = 0;
 
         text_endscore.text = "FINAL SCORE: " + int_score;
@@ -56,7 +58,7 @@ public class InGame_PlayerScore : MonoBehaviour
         
         text_endkcal.text = "ENERGY BURNT: " + fl_kcal.ToString("0.00 kcal");
 
-        _sportPlayer.TodayBurntKcal += fl_kcal;
+        _sportPlayer.TodayBurntKcal += (int)fl_kcal;
         _json.SavePlayerToJson(_sportPlayer);
     }
 
@@ -66,5 +68,13 @@ public class InGame_PlayerScore : MonoBehaviour
         go_uiHelpers.SetActive(true);
 
         Time.timeScale = 0;
+    }
+
+    public void CheckKcalObjective()
+    {
+        if(_sportPlayer.TodayBurntKcal >= _sportPlayer.KcalObjective)
+        {
+            _sportPlayer.ActivityRegister[_sportPlayer.ActivityRegister.Count].ObjectiveReached = true;
+        }
     }
 }
