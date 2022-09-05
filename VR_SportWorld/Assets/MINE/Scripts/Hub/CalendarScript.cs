@@ -14,6 +14,8 @@ public class CalendarScript : MonoBehaviour
         public int dayNum;
         public Color dayColor;
         public GameObject obj;
+        public int KcalBurnt;
+        public int ActivityTime;
 
         /// <summary>
         /// Constructor of Day
@@ -75,10 +77,14 @@ public class CalendarScript : MonoBehaviour
     /// If you have some option to select a day in the calendar, you would want the change this objects day value to the last selected day
     /// </summary>
     public DateTime currDate = DateTime.Now;
+    /// <summary>
+    /// In start we set the Calendar to the current date
+    /// </summary>
+    /// 
 
     public List<ActivityDay> PlayerActivityDays;
     /// <summary>
-    /// In start we set the Calendar to the current date
+    /// Activity days list with the info about the days
     /// </summary>
     private void Start()
     {
@@ -115,6 +121,13 @@ public class CalendarScript : MonoBehaviour
                     else
                     {
                         newDay = new Day(currDay - startDay, Color.white, weeks[w].GetChild(i).gameObject);
+                        for (int j = 0; j < PlayerActivityDays.Count; j++)
+                        {
+                            if (PlayerActivityDays[j].day == (currDay - startDay) + 1 && PlayerActivityDays[j].ObjectiveReached == true)
+                            {
+                                newDay = new Day(currDay - startDay, Color.green, weeks[w].GetChild(i).gameObject);
+                            }
+                        }
                     }
                     days.Add(newDay);
                 }
@@ -131,11 +144,19 @@ public class CalendarScript : MonoBehaviour
                     days[i].UpdateColor(Color.grey);
                 }
                 else
-                {
+                {               
                     days[i].UpdateColor(Color.white);
                 }
 
                 days[i].UpdateDay(i - startDay);
+
+                for (int j = 0; j < PlayerActivityDays.Count; j++)
+                {
+                    if (PlayerActivityDays[j].day == (i - startDay) +1 && PlayerActivityDays[j].ObjectiveReached == true)
+                    {
+                        days[i].UpdateColor(Color.green);
+                    }
+                }
             }
         }
 

@@ -12,12 +12,13 @@ public class SportPlayer
     public int UID = 0;
     public List<int> MaxScore;
     public int TodayBurntKcal;
+    public int TodayActivityTime;
     public int KcalObjective = 10;
     public List<ActivityDay> ActivityRegister;
 
     public SportPlayer()
     {
-        name = "user";
+        name = "user 1";
         weight = 50;
         age = 13;
         UID = 0;
