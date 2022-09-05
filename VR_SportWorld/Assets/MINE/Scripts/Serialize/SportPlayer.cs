@@ -8,6 +8,7 @@ public class SportPlayer
 {
     public string name = "user";
     public double weight = 80;
+    public int age = 13;
     public int UID = 0;
     public List<int> MaxScore;
     public int TodayBurntKcal;
@@ -18,6 +19,7 @@ public class SportPlayer
     {
         name = "user";
         weight = 50;
+        age = 13;
         UID = 0;
         TodayBurntKcal = 0;
         KcalObjective = 400;
@@ -33,7 +35,8 @@ public class ActivityDay
     public int month = 0;
     public int year = 0;
 
-    public float EnergyBurnt = 0;
+    public int EnergyBurnt = 0;
+    public float ActivityTime;
     public bool ObjectiveReached = false;
 
     public ActivityDay()
@@ -43,6 +46,7 @@ public class ActivityDay
         year = DateTime.Today.Year;
 
         EnergyBurnt = 0;
+        ActivityTime = 0;
         ObjectiveReached = false;
     }
 }

@@ -21,23 +21,21 @@ public class HubScript : MonoBehaviour
 
     //SetCharacter Screen
     public InputField PlayerName_InputField;
-    public Text weight_text;
+    public Text weight_text, age_text, kcalobj_text;
 
     // Start is called before the first frame update
     void Start()
     {
         json = gameObject.GetComponent<JSON_Writter>();
 
-        if (File.Exists("/ MINE / SavedData / PlayerDataFile.json")) //ERROR AQUÍ
+        if (File.Exists(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json"))
         {
             tempPlayer = json.LoadPlayerFromJson();
-            print("read");
+            CheckIfCreateNewDay(tempPlayer.ActivityRegister[tempPlayer.ActivityRegister.Count-1]);
         }
         else
         {
-            print("new user");
             CreateNewUser();
-            tempPlayer = json.LoadPlayerFromJson();//Temporal
         }
 
         UpdateScreenInfo();
@@ -47,22 +45,39 @@ public class HubScript : MonoBehaviour
         //CheckIfCreateNewDay(tempPlayer.ActivityRegister[tempPlayer.ActivityRegister.Count]);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AddWeight()
     {
         tempPlayer.weight += 1;
         weight_text.text = tempPlayer.weight + " Kg";
     }
-
     public void LoseWeight()
     {
         tempPlayer.weight -= 1;
         weight_text.text = tempPlayer.weight + " Kg";
+    }
+
+    public void AddAge()
+    {
+        tempPlayer.age += 1;
+        age_text.text = tempPlayer.age + "";
+    } 
+    
+    public void LoseAge()
+    {
+        tempPlayer.age -= 1;
+        age_text.text = tempPlayer.age + "";
+    }
+
+    public void AddKcalObj()
+    {
+        tempPlayer.KcalObjective += 100;
+        kcalobj_text.text = tempPlayer.KcalObjective + "";
+    } 
+    
+    public void LoseKcalObj()
+    {
+        tempPlayer.KcalObjective -= 100;
+        kcalobj_text.text = tempPlayer.KcalObjective + "";
     }
 
     public void SetPlayer()
@@ -73,15 +88,20 @@ public class HubScript : MonoBehaviour
     }
     void CreateNewUser()
     {
+        usercreation_Screen.SetActive(true);
+        main_Screen.SetActive(false);
+
         json.SavePlayerToJson(new SportPlayer()); //create player default values
+
+        tempPlayer = json.LoadPlayerFromJson(); //Equal to temporal player
     }
     void CheckIfCreateNewDay(ActivityDay _lastday) //Check if the last day played is equal to today to add a new register
     {
-        print("Year" + _lastday.year);
         if(_lastday.year != DateTime.Today.Year || _lastday.month != DateTime.Today.Month || _lastday.day != DateTime.Today.Day)
         {
             ActivityDay currentDay = new ActivityDay();
             tempPlayer.ActivityRegister.Add(currentDay);
+            json.SavePlayerToJson(tempPlayer);
             Debug.Log("New day created");
         }
     }
