@@ -14,6 +14,10 @@ public class FlyingPlayer : MonoBehaviour
     public float WingForce;
     Vector3 v3_R_LastPos, v3_L_LastPos;
 
+    private FlyingManager _gameManager;
+    private InGame_PlayerScore _playerScore;
+
+    public Transform pos_rotReference;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +25,18 @@ public class FlyingPlayer : MonoBehaviour
 
         v3_R_LastPos = go_R_Hand.transform.position - transform.position;
         v3_L_LastPos = go_L_Hand.transform.position - transform.position;
+
+        _playerScore = transform.GetComponent<InGame_PlayerScore>();
+        _gameManager = GameObject.Find("HalosManager").gameObject.GetComponent<FlyingManager>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        FlyingSystem();
+    }
+
+    void FlyingSystem()
     {
         //Calculate relative Speed of both hands respect the player position
         var RHand_Speed = ((go_R_Hand.transform.position - transform.position) - v3_R_LastPos) / Time.deltaTime;
@@ -33,18 +45,18 @@ public class FlyingPlayer : MonoBehaviour
         var LHand_Speed = ((go_L_Hand.transform.position - transform.position) - v3_L_LastPos) / Time.deltaTime;
         v3_L_LastPos = go_L_Hand.transform.position - transform.position;
 
-        
+
         float verticalForce = RHand_Speed.y + LHand_Speed.y;
         verticalForceT.text = "VSpeed: " + (int)verticalForce;
 
         if (verticalForce < -1f && verticalForce > -16f & transform.position.y <= 15f)
         {
             Vector3 YForce = new Vector3(0, verticalForce * -WingForce);
-            Vector3 FlightForce = go_Camera.transform.forward * Mathf.Abs(verticalForce * 6) + YForce;
+            Vector3 FlightForce = pos_rotReference.transform.forward * Mathf.Abs(verticalForce * 3) + YForce;
             _rigidbody.AddForce(FlightForce);
         }
 
-        if(_rigidbody.velocity.y <= -3.5f)
+        if (_rigidbody.velocity.y <= -3.5f)
         {
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, -3.5f, _rigidbody.velocity.z);
         }
@@ -65,15 +77,6 @@ public class FlyingPlayer : MonoBehaviour
         }
 
         R_Force.text = "HorSpeed: " + (int)HorizontalForce.magnitude;
-        //if(_rigidbody.velocity.y > )
-
-        //if (transform.position.y > 0)
-        //{
-        //    //_rigidbody.AddForce(Camera.transform.forward * Mathf.Abs(_rigidbody.velocity.y * 3);
-
-        //    _rigidbody.velocity += transform.forward * 2;
-        //}
-
     }
 
     Vector3 CalculateRelativeSpeed(Vector3 _objectPos, Vector3 _relativePos, Vector3 _lastPos)
@@ -81,5 +84,16 @@ public class FlyingPlayer : MonoBehaviour
         var Speed = ((_objectPos - _relativePos) - _lastPos) / Time.deltaTime;
         _lastPos = _objectPos - _relativePos;
         return Speed;
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if(col.tag == "Damagable")
+        {
+            Destroy(col.gameObject);
+            _playerScore.AddScore(100);
+            _gameManager.time_countdown += 10;
+            _gameManager.num_leftHalos--;
+        }
     }
 }

@@ -40,7 +40,7 @@ public class InGame_PlayerScore : MonoBehaviour
         fl_timer += Time.deltaTime;
         fl_kcal = (fl_timer / 60) * 5 * 3.5f * (float)_sportPlayer.weight / 200; //MET FORMULA: minutes * MET * 3.5 * Kg / 200
 
-        text_timer.text = "Time: " + (int)fl_timer;
+        text_timer.text = "Time: " + DisplayTime(fl_timer);
         text_kcal.text = "Energy: " + fl_kcal.ToString("0.0 kcal");
     }
 
@@ -55,7 +55,7 @@ public class InGame_PlayerScore : MonoBehaviour
         Time.timeScale = 0;
 
         text_endscore.text = "FINAL SCORE: " + int_score;
-        text_endtime.text = "TOTAL TIME: " + (int)(fl_timer/60) + " minutes";
+        text_endtime.text = "TOTAL TIME: " + DisplayTime(fl_timer);
         
         text_endkcal.text = "ENERGY BURNT: " + fl_kcal.ToString("0.00 kcal");
 
@@ -77,5 +77,20 @@ public class InGame_PlayerScore : MonoBehaviour
         {
             _sportPlayer.ActivityRegister[_sportPlayer.ActivityRegister.Count].ObjectiveReached = true;
         }
+    }
+
+    public void AddScore(int _score)
+    {
+        int_score += _score;
+        text_score.text = "Score: " + int_score;
+    }
+
+    string DisplayTime(float timeToDisplay)
+    {
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        string _displayTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        return _displayTime;
     }
 }
