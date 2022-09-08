@@ -20,6 +20,7 @@ public class InGame_PlayerScore : MonoBehaviour
     {
         LegGame,
         RacketGame,
+        flyingGame,
         PausedGame
     }
 

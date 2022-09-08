@@ -123,7 +123,7 @@ public class CalendarScript : MonoBehaviour
                         newDay = new Day(currDay - startDay, Color.white, weeks[w].GetChild(i).gameObject);
                         for (int j = 0; j < PlayerActivityDays.Count; j++)
                         {
-                            if (PlayerActivityDays[j].day == (currDay - startDay) + 1 && PlayerActivityDays[j].ObjectiveReached == true)
+                            if (PlayerActivityDays[j].year == year && PlayerActivityDays[j].month == month && PlayerActivityDays[j].day == (currDay - startDay) + 1 && PlayerActivityDays[j].ObjectiveReached == true)
                             {
                                 newDay = new Day(currDay - startDay, Color.green, weeks[w].GetChild(i).gameObject);
                             }
@@ -152,7 +152,7 @@ public class CalendarScript : MonoBehaviour
 
                 for (int j = 0; j < PlayerActivityDays.Count; j++)
                 {
-                    if (PlayerActivityDays[j].day == (i - startDay) +1 && PlayerActivityDays[j].ObjectiveReached == true)
+                    if (PlayerActivityDays[j].year == year && PlayerActivityDays[j].month == month && PlayerActivityDays[j].day == (i - startDay) +1 && PlayerActivityDays[j].ObjectiveReached == true)
                     {
                         days[i].UpdateColor(Color.green);
                     }
