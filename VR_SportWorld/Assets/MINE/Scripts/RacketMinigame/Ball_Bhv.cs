@@ -7,10 +7,13 @@ public class Ball_Bhv : MonoBehaviour
     public GameObject explosion;
     float lifetimer;
     InGame_PlayerScore _player;
+    RacketPlayer _racketPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
         _player = GameObject.Find("CommonVRPlayer").GetComponent<InGame_PlayerScore>();
+        _racketPlayer = GameObject.Find("CommonVRPlayer").GetComponent<RacketPlayer>();
     }
 
     // Update is called once per frame
@@ -36,7 +39,7 @@ public class Ball_Bhv : MonoBehaviour
 
         if(col.tag == "Damagable")
         {
-            _player.EndGame();
+            _racketPlayer.RemoveLife();
             Destroy(gameObject);
         }
     }

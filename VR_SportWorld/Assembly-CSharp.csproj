@@ -157,7 +157,7 @@
     <Compile Include="Assets\MINE\Scripts\RacketMinigame\Cannon_Bhv.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs" />
     <Compile Include="Assets\MINE\Scripts\RacketMinigame\Physics\VelocityDebugger.cs" />
-    <Compile Include="Assets\MINE\Scripts\UI_PanelsFollower.cs" />
+    <Compile Include="Assets\MINE\Scripts\Basic\CopyyRot.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabbableCrosshair.cs" />
@@ -208,6 +208,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\MINE\Scripts\Hub\CalendarScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
+    <Compile Include="Assets\MINE\Scripts\Basic\LookAtScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />

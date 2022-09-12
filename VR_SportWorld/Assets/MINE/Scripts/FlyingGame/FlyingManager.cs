@@ -15,12 +15,15 @@ public class FlyingManager : MonoBehaviour
     public float time_countdown;
     public Text text_countdown;
 
+    public InGame_PlayerScore _PlayerScore;
+
     // Start is called before the first frame update
     void Start()
     {
         time_countdown = 30;
         num_Halos = 5;
         num_leftHalos = 0;
+        CreateRound();
     }
 
     // Update is called once per frame
@@ -31,24 +34,33 @@ public class FlyingManager : MonoBehaviour
 
         if(num_leftHalos <= 0)
         {
-            CreateRound();
+            for(int i = 0; i<halosList.Count; i++)
+            {
+               Destroy(halosList[i]);
+               halosList.Remove(halosList[i]);
+            }
+            CreateRound();          
+        }
+
+        if(time_countdown <= 0)
+        {
+            _PlayerScore.EndGame();
         }
     }
 
     void CreateRound()
     {
-        halosList.Clear();
+        //halosList.Clear();
         for(int i = 0; i<num_Halos; i++)
         {
             GameObject newHalo =
-            GameObject.Instantiate(go_haloPrefab, new Vector3(Random.Range(-119, 74), Random.Range(3f, 12f), Random.Range(-100, 96)), 
-            Quaternion.Euler(new Vector3(90, Random.Range(0f,360f), go_haloPrefab.transform.rotation.z)));
+            GameObject.Instantiate(go_haloPrefab, new Vector3(Random.Range(-119, 74), Random.Range(3f, 12f), Random.Range(-100, 96)), Quaternion.identity);
+
+            newHalo.GetComponent<LookAtScript>().target = GameObject.Find("CommonVRPlayer").transform;
 
             halosList.Add(newHalo);
             num_leftHalos++;
-        }
-        num_Halos = num_leftHalos;
-        
+        }       
     }
 
     void DisplayTime(float timeToDisplay)

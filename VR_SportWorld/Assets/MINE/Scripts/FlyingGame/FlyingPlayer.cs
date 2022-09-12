@@ -7,7 +7,6 @@ public class FlyingPlayer : MonoBehaviour
 {
     private Rigidbody _rigidbody;
 
-    public Text R_Force, verticalForceT;
     public GameObject go_Camera;
 
     public GameObject go_R_Hand, go_L_Hand;
@@ -17,7 +16,8 @@ public class FlyingPlayer : MonoBehaviour
     private FlyingManager _gameManager;
     private InGame_PlayerScore _playerScore;
 
-    public Transform pos_rotReference;
+    private Transform pos_rotReference;
+    private Transform pos_frontReference;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +28,8 @@ public class FlyingPlayer : MonoBehaviour
 
         _playerScore = transform.GetComponent<InGame_PlayerScore>();
         _gameManager = GameObject.Find("HalosManager").gameObject.GetComponent<FlyingManager>();
+
+        pos_rotReference = this.gameObject.transform.Find("RotReference");
     }
 
     // Update is called once per frame
@@ -47,7 +49,6 @@ public class FlyingPlayer : MonoBehaviour
 
 
         float verticalForce = RHand_Speed.y + LHand_Speed.y;
-        verticalForceT.text = "VSpeed: " + (int)verticalForce;
 
         if (verticalForce < -1f && verticalForce > -16f & transform.position.y <= 15f)
         {
@@ -69,14 +70,12 @@ public class FlyingPlayer : MonoBehaviour
         var HorLHand_Speed = new Vector3(LHand_Speed.x, 0, LHand_Speed.z);
         var HorizontalForce = HorRHand_Speed + HorLHand_Speed;
 
-        if (HorizontalForce.magnitude > 5)
+        if (HorizontalForce.magnitude > 5 && HorizontalForce.magnitude < 15f)
         {
             var force = HorizontalForce.magnitude * -5f;
             Vector3 FlightHorForce = go_Camera.transform.forward * force;
             _rigidbody.AddForce(FlightHorForce);
         }
-
-        R_Force.text = "HorSpeed: " + (int)HorizontalForce.magnitude;
     }
 
     Vector3 CalculateRelativeSpeed(Vector3 _objectPos, Vector3 _relativePos, Vector3 _lastPos)
@@ -91,9 +90,9 @@ public class FlyingPlayer : MonoBehaviour
         if(col.tag == "Damagable")
         {
             Destroy(col.gameObject);
+            _gameManager.num_leftHalos--;
             _playerScore.AddScore(100);
             _gameManager.time_countdown += 10;
-            _gameManager.num_leftHalos--;
         }
     }
 }

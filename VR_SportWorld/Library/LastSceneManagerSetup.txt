@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MINE/Scenes/FlyingMinigame.unity
+- path: Assets/MINE/Scenes/LegMinigame.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

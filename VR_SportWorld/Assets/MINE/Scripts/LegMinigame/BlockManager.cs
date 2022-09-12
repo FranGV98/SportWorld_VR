@@ -11,7 +11,7 @@ public class BlockManager : MonoBehaviour
     public float fl_playerHeigth;
     private float fl_spawntimer, fl_spawntime;
     private int int_wave, int_difficulty, int_phase, int_spawn;
-    [HideInInspector] public int int_UpScorerCount, int_DownScorerCount;
+     public int int_UpScorerCount, int_DownScorerCount;
     [HideInInspector] public int int_current_color;
 
     // Start is called before the first frame update
@@ -20,7 +20,8 @@ public class BlockManager : MonoBehaviour
         fl_spawntime = 3;
         fl_spawntimer = fl_spawntime;
 
-        fl_playerHeigth = go_playerHead.transform.position.y;
+        //fl_playerHeigth = go_playerHead.transform.position.y;
+        fl_playerHeigth = 1.8f;
     }
 
     // Update is called once per frame
@@ -49,6 +50,8 @@ public class BlockManager : MonoBehaviour
 
             GameObject current_Block =
             GameObject.Instantiate(go_list_blockPrefabs[0], new Vector3(transform.position.x, fl_SpawnPos, transform.position.z), transform.rotation);
+
+            current_Block.transform.localScale = new Vector3(current_Block.transform.localScale.x, Random.Range(0.6f, 1f), Random.Range(0.6f, 2f));
 
             go_list_tempblocks.Add(current_Block);
 

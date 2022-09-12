@@ -60,6 +60,7 @@ public class InGame_PlayerScore : MonoBehaviour
         text_endkcal.text = "ENERGY BURNT: " + fl_kcal.ToString("0.00 kcal");
 
         _sportPlayer.TodayBurntKcal += (int)fl_kcal;
+        _sportPlayer.TodayActivityTime += (int)fl_timer;
         _json.SavePlayerToJson(_sportPlayer);
     }
 

@@ -45,9 +45,10 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void LoadBoxingGame()
+    public void LoadFlyingGame()
     {
         Time.timeScale = 1;
+        SceneManager.LoadScene("FlyingMinigame");
     }
 
     //PAUSE MENU
