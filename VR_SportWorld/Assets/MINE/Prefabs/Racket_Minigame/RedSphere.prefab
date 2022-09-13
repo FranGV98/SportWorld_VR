@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589320138}
   - component: {fileID: 1589320139}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3950578486065287060}
   - component: {fileID: 4081491205338112802}
   - component: {fileID: 4918232947082142141}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 3930474720263658847}
   - component: {fileID: 580302412233215674}
   - component: {fileID: 7646080469116432231}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RedSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

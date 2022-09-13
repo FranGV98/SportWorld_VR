@@ -172,6 +172,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshMask.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\FurnitureSpawner.cs" />
     <Compile Include="Assets\MINE\Scripts\RacketMinigame\RacketPlayer.cs" />
+    <Compile Include="Assets\MINE\Scripts\Basic\LookAtScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\PinchStateModule.cs" />
     <Compile Include="Assets\MobileDepthWater\Scripts\CameraDepthSlider.cs" />
@@ -208,13 +209,15 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
     <Compile Include="Assets\MINE\Scripts\Hub\CalendarScript.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\MINE\Scripts\Basic\LookAtScript.cs" />
+    <Compile Include="Assets\JMO Assets\Toony Colors\Demo 2.0\TCF_Demo.cs" />
+    <Compile Include="Assets\MINE\Art\3D\Assets\Flying\Halo\RotationScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\Hidden.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\Wall.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\ButtonGlow.shader" />
+    <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Lighting.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthroughSoft.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\OverwriteAlpha.shader" />
@@ -230,8 +233,10 @@
     <None Include="Assets\MobileDepthWater\Shaders\WaterOpaque\Height\DiffuseHeightWater.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\InvisibleOccluder.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainPropsShader.shader" />
+    <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Alpha.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
+    <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Regular.shader" />
     <None Include="Assets\MobileDepthWater\Shaders\WaterTwoSide\Height\DiffuseHeightWaterTwoSide.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Shaders\Multiview Stereo.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
@@ -244,6 +249,8 @@
     <None Include="Assets\MobileDepthWater\Shaders\WaterOpaque\Height\DiffuseColorHeightWater.shader" />
     <None Include="Assets\MobileDepthWater\Shaders\WaterOpaque\Depth\DiffuseColorDepthWater.shader" />
     <None Include="Assets\Day-Night Skyboxes\readme.txt" />
+    <None Include="Assets\JMO Assets\Toony Colors\!ToonyColors Readme.txt" />
+    <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Outline.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\NOTICE.txt" />

@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MINE/Scenes/Hub.unity
+    guid: ec4c9759594bdc64c8d8bdb373828381
+  - enabled: 1
     path: Assets/MINE/Scenes/LegMinigame.unity
     guid: 908ca91022ed91c4982f41a767929b99
   - enabled: 1
-    path: Assets/MINE/Scenes/Hub.unity
-    guid: ec4c9759594bdc64c8d8bdb373828381
+    path: Assets/MINE/Scenes/TennisMinigame.unity
+    guid: 5ef58ce96dc8fe647aad3c35d04de4bc
+  - enabled: 1
+    path: Assets/MINE/Scenes/FlyingMinigame.unity
+    guid: 9a6404014d510f84f9f3e497d9dd4580
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 762b54ce0bbff2d44806d4c1cbadc6ef, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: df16172234b937343a5ab8a2afe95acc, type: 2}

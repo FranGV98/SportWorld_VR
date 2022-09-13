@@ -159,12 +159,12 @@ public class HandPresence_Bhv : MonoBehaviour
         }
 
 
-        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
-        if (primaryButtonValue)
-        {
-            GameObject Ball = GameObject.Find("RedSphere");
-            Ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Ball.transform.position = Vector3.MoveTowards(Ball.transform.position, transform.position,  10 * Time.deltaTime);
-        }
+        //targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+        //if (primaryButtonValue)
+        //{
+        //    GameObject Ball = GameObject.Find("RedSphere");
+        //    Ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        //    Ball.transform.position = Vector3.MoveTowards(Ball.transform.position, transform.position,  10 * Time.deltaTime);
+        //}
     }
 }

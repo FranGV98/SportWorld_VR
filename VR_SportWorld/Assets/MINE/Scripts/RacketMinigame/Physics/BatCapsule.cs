@@ -9,6 +9,7 @@ public class BatCapsule : MonoBehaviour
         var follower = Instantiate(_batCapsuleFollowerPrefab);
         follower.transform.position = transform.position;
         follower.SetFollowTarget(this);
+        follower.gameObject.layer = this.gameObject.layer;
     }
 
     private void Start()

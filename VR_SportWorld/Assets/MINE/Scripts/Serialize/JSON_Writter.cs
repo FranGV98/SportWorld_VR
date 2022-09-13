@@ -6,6 +6,8 @@ using UnityEngine;
 public class JSON_Writter : MonoBehaviour
 {
     // Start is called before the first frame update
+    public string directorypath;
+
     void Start()
     {
         //SportPlayer player_1 = new SportPlayer();
@@ -14,6 +16,9 @@ public class JSON_Writter : MonoBehaviour
         //player_1.UID = 1;
 
         //SavePlayerToJson(player_1);
+
+        //path = Application.persistentDataPath + "/MINE/SavedData/PlayerDataFile.json";
+        directorypath = Application.persistentDataPath + "/MINE/SavedData";
     }
 
     // Update is called once per frame
@@ -24,15 +29,34 @@ public class JSON_Writter : MonoBehaviour
 
     public void SavePlayerToJson(SportPlayer _player)
     {
+        CreateDirectory(directorypath);
+
         string json = JsonUtility.ToJson(_player);
-        File.WriteAllText(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json", json);
+        //File.WriteAllText(path, json);
+
+        using StreamWriter writer = new StreamWriter(directorypath + "/playerdata.json");
+        writer.Write (json);
+        writer.Flush();
+        writer.Close();
     }
 
     public SportPlayer LoadPlayerFromJson()
     {
-        string json = File.ReadAllText(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json");
+        using StreamReader reader = new StreamReader(directorypath + "/playerdata.json");
+        string json = reader.ReadToEnd();
+        reader.Close();
+        //string json = File.ReadAllText(path);
         SportPlayer _player = JsonUtility.FromJson<SportPlayer>(json);
         return _player;
+    }
+
+    public static DirectoryInfo CreateDirectory(string path)
+    {
+        if (Directory.Exists(path))
+        {
+            return null;
+        }
+        return Directory.CreateDirectory(path);
     }
     
 }

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class HubScript : MonoBehaviour
 {
-    public JSON_Writter json;
+    JSON_Writter json;
     public SportPlayer tempPlayer;
 
     public CalendarScript calendar;
@@ -28,7 +28,7 @@ public class HubScript : MonoBehaviour
     {
         json = gameObject.GetComponent<JSON_Writter>();
 
-        if (File.Exists(Application.dataPath + "/MINE/SavedData/PlayerDataFile.json"))
+        if (File.Exists(Application.persistentDataPath + "/MINE/SavedData/playerdata.json"))
         {
             tempPlayer = json.LoadPlayerFromJson();
             CheckIfCreateNewDay(tempPlayer.ActivityRegister[tempPlayer.ActivityRegister.Count-1]);
