@@ -19,6 +19,14 @@ public class MenuController : MonoBehaviour
         
     }
 
+    public void SavePlayerValues()
+    {
+        if(_player != null)
+        {
+            _player.CheckScores();
+            _player.SaveValues();
+        }
+    }
 
     //SCENE MANAGEMENT
     public void LoadHub()
@@ -26,6 +34,7 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Hub");
     }
+
 
     public void LoadLegGame()
     {

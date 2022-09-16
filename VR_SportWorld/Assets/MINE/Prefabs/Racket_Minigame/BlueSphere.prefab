@@ -233,8 +233,8 @@ GameObject:
   - component: {fileID: 3930474720263658843}
   - component: {fileID: 3930474720263658842}
   - component: {fileID: 3930474720263658847}
-  - component: {fileID: 580302412233215674}
   - component: {fileID: 8382688165104587993}
+  - component: {fileID: -9169454254026315073}
   m_Layer: 12
   m_Name: BlueSphere
   m_TagString: Untagged
@@ -451,7 +451,20 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!82 &580302412233215674
+--- !u!114 &8382688165104587993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930474720263658841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6158ad037383824ca62ad0706973ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 4404719055015795780, guid: a894f9f28bcea2a449ea15f754c117ca, type: 3}
+--- !u!82 &-9169454254026315073
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,8 +484,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 23.746181
+  MinDistance: 5
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -547,16 +560,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8382688165104587993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3930474720263658841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6158ad037383824ca62ad0706973ab0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 4404719055015795780, guid: a894f9f28bcea2a449ea15f754c117ca, type: 3}

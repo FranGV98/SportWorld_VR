@@ -28,7 +28,10 @@ public class HubScript : MonoBehaviour
 
     //Scoring System
     public Text ScoreGameInfo_text;
-    public int count_Minigames; 
+    public int count_Minigames;
+
+    //Lvl System
+    private int playerLvl, playerXp;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +49,8 @@ public class HubScript : MonoBehaviour
         }
 
         calendar.PlayerActivityDays = tempPlayer.ActivityRegister;
+
+        UpdatePlayerLevel();
 
         CreateMinigamePlayerInfo();
 
@@ -105,9 +110,9 @@ public class HubScript : MonoBehaviour
     {
         if(screens_List[1].activeSelf)
         {
-            mainusername_text.text = tempPlayer.name;
+            mainusername_text.text = "Lvl. " + playerLvl + "  "  + tempPlayer.name;
             mainKcal_text.text = "Kcal burnt today: " + tempPlayer.TodayBurntKcal + " / " + tempPlayer.KcalObjective;
-            activitytime_text.text = "Activity time: " + tempPlayer.TodayActivityTime/60 + " min";
+            activitytime_text.text = "Activity time: " + DisplayTime(tempPlayer.TodayActivityTime) + " min";
         }
         if(screens_List[0].activeSelf)
         {
@@ -203,6 +208,19 @@ public class HubScript : MonoBehaviour
         {
             return;
         }
+    }
+
+    void UpdatePlayerLevel()
+    {
+        for(int i = 0; i < tempPlayer.ActivityRegister.Count; i++)
+        {
+            if(tempPlayer.ActivityRegister[i].ObjectiveReached)
+            {
+                playerXp += 50;
+            }
+        }
+
+        playerLvl = 1 + (playerXp / 150);
     }
     
 }

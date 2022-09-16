@@ -18,15 +18,15 @@ public class BlockManager : MonoBehaviour
     void Start()
     {
         fl_spawntime = 3;
-        fl_spawntimer = fl_spawntime;
+        fl_spawntimer = 2;
 
-        //fl_playerHeigth = go_playerHead.transform.position.y;
-        fl_playerHeigth = 1.8f;
+        fl_playerHeigth = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(fl_playerHeigth > 0)
         SimpleSpawnSystem();
     }
 
@@ -51,11 +51,25 @@ public class BlockManager : MonoBehaviour
             GameObject current_Block =
             GameObject.Instantiate(go_list_blockPrefabs[0], new Vector3(transform.position.x, fl_SpawnPos, transform.position.z), transform.rotation);
 
-            current_Block.transform.localScale = new Vector3(current_Block.transform.localScale.x, Random.Range(0.6f, 1f), Random.Range(0.6f, 2f));
+            if(fl_SpawnPos <= 0.5f)
+            {
+                current_Block.transform.localScale = new Vector3(current_Block.transform.localScale.x, Random.Range(1.5f, 2f), Random.Range(0.6f, 2f));
+            }
+            else
+            {
+                current_Block.transform.localScale = new Vector3(current_Block.transform.localScale.x, Random.Range(0.6f, 1f), Random.Range(0.6f, 2f));
+            }
 
             go_list_tempblocks.Add(current_Block);
 
-            //fl_spawntime -= 0.1f;
+            if(fl_spawntime > 1f)
+            {
+                fl_spawntime -= 0.1f;
+            }
+            else
+            {
+                fl_spawntime = 3f;
+            }
             fl_spawntimer = fl_spawntime;
         }
     }

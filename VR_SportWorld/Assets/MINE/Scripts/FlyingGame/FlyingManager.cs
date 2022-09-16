@@ -45,6 +45,7 @@ public class FlyingManager : MonoBehaviour
         if(time_countdown <= 0)
         {
             _PlayerScore.EndGame();
+            time_countdown = 99;
         }
     }
 

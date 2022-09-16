@@ -8,8 +8,10 @@ using UnityEngine.XR;
 public class Player_Blocks : MonoBehaviour
 {
     public InGame_PlayerScore _playerscoreSys;
+    public GameObject HUD;
     private BlockManager _blockManager;
 
+    public AudioSource ScoreSFX, DeathSFX;
     void Start()
     {
         _blockManager = GameObject.Find("Blocks_Manager").GetComponent<BlockManager>();
@@ -49,15 +51,23 @@ public class Player_Blocks : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Damagable"))
         {
             Destroy(other.gameObject);
+            DeathSFX.Play();
             _playerscoreSys.EndGame();
         }
 
         if(other.gameObject.layer == LayerMask.NameToLayer("Scorer"))
         {
             _blockManager.ColorTransition();
-
+            ScoreSFX.Play();
             Destroy(other.transform.parent.gameObject);
+        }
 
+        if(other.gameObject.name == "Measurer")
+        {
+            _blockManager.fl_playerHeigth = transform.position.y;
+            HUD.SetActive(false);
+            print(transform.position.y);
+            Destroy(other.gameObject);
         }
     }
 }

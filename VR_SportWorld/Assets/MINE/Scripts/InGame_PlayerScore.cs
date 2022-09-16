@@ -13,7 +13,7 @@ public class InGame_PlayerScore : MonoBehaviour
     public Text text_final;
     public GameObject go_pauseScreen, go_endScreen, go_uiHelpers;
 
-    private JSON_Writter _json;
+    public JSON_Writter _json;
     private SportPlayer tempPlayer;
 
     public int gameUID;
@@ -33,7 +33,7 @@ public class InGame_PlayerScore : MonoBehaviour
         _json = GameObject.Find("MenusManager").GetComponent<JSON_Writter>();
         tempPlayer = _json.LoadPlayerFromJson();
 
-        //print(_sportPlayer.TodayBurntKcal);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -63,6 +63,14 @@ public class InGame_PlayerScore : MonoBehaviour
         tempPlayer.TodayBurntKcal += (int)fl_kcal;
         tempPlayer.TodayActivityTime += (int)fl_timer;
         _json.SavePlayerToJson(tempPlayer);
+
+    }
+
+    public void SaveValues()
+    {
+        tempPlayer.TodayBurntKcal += (int)fl_kcal;
+        tempPlayer.TodayActivityTime += (int)fl_timer;
+        _json.SavePlayerToJson(tempPlayer);
     }
 
     public void PauseGame()
@@ -81,7 +89,7 @@ public class InGame_PlayerScore : MonoBehaviour
         }
     }
 
-    void CheckScores()
+    public void CheckScores()
     {
         if(int_score > tempPlayer.MinigamesInfo[gameUID].MaxScore)
         {
