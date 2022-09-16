@@ -10,20 +10,23 @@ public class SportPlayer
     public double weight = 80;
     public int age = 13;
     public int UID = 0;
-    public List<int> MaxScore;
-    public int TodayBurntKcal;
-    public int TodayActivityTime;
+    public List<MiniGameInfo> MinigamesInfo;
+    public float TodayBurntKcal;
+    public float TodayActivityTime;
     public int KcalObjective = 10;
     public List<ActivityDay> ActivityRegister;
+    public int numMinigames;
 
     public SportPlayer()
     {
-        name = "user 1";
+        name = "User";
         weight = 50;
-        age = 13;
+        age = 20;
         UID = 0;
         TodayBurntKcal = 0;
         KcalObjective = 400;
+        numMinigames = 0;
+        MinigamesInfo = new List<MiniGameInfo>();
         ActivityRegister = new List<ActivityDay>();
         ActivityRegister.Add(new ActivityDay());
     }
@@ -51,3 +54,20 @@ public class ActivityDay
         ObjectiveReached = false;
     }
 }
+
+[System.Serializable]
+public class MiniGameInfo
+{
+    //Minigames: [0] Leg, [1] Racket, [2] Flying
+    public int UID;
+    public int MaxScore;
+    public float MaxTime;
+
+    public MiniGameInfo(int uid)
+    {
+        UID = uid;
+        MaxScore = 0;
+        MaxTime = 0;
+    }
+}
+

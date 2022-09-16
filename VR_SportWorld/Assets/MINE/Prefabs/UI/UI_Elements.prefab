@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c06b7a03e2f31418579c2b46abd102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directorypath: 
 --- !u!1 &8301838097450914991
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +451,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5462589385114914817}
+    - target: {fileID: 474410161212337792, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -406.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 474410161212337792, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 474410161212337807, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 474410161360781699, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -540,7 +553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474410161360781720, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 474410161360781703, guid: e1661a6534ceeb94fa8c76a92af21262, type: 3}

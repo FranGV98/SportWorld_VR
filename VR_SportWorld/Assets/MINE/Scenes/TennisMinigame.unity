@@ -123,28 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &10564656 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8476755558671454308, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
-  m_PrefabInstance: {fileID: 8301838098356485775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &10564657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8476755558133036737, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
-  m_PrefabInstance: {fileID: 8301838098356485775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &10564658 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8476755558413837358, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
@@ -940,7 +918,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3266,9 +3244,17 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
+      propertyPath: gameUID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
       propertyPath: text_kcal
       value: 
       objectReference: {fileID: 8301838098356485777}
+    - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
+      propertyPath: text_final
+      value: 
+      objectReference: {fileID: 10564658}
     - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
       propertyPath: text_score
       value: 
@@ -3284,11 +3270,11 @@ PrefabInstance:
     - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
       propertyPath: text_endkcal
       value: 
-      objectReference: {fileID: 10564656}
+      objectReference: {fileID: 0}
     - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
       propertyPath: text_endtime
       value: 
-      objectReference: {fileID: 10564657}
+      objectReference: {fileID: 0}
     - target: {fileID: 7492456921052507315, guid: e650be9342cba634f9b1ddf02d86814c, type: 3}
       propertyPath: text_endscore
       value: 

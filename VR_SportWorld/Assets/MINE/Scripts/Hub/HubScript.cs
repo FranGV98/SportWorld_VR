@@ -11,9 +11,12 @@ public class HubScript : MonoBehaviour
     public SportPlayer tempPlayer;
 
     public CalendarScript calendar;
+    
+    //Screens: [0] User creation, [1] Main Screen, [2] Explanation Screen
+    public List<GameObject> screens_List;
 
-    public GameObject usercreation_Screen;
-    public GameObject calendar_Screen, main_Screen;
+    //Panels: [0] Leg, [1] Racket, [2] Flying
+    public List<GameObject> infoPanels_List;
 
     //Main Screen
     public Text mainusername_text;
@@ -22,6 +25,10 @@ public class HubScript : MonoBehaviour
     //SetCharacter Screen
     public InputField PlayerName_InputField;
     public Text weight_text, age_text, kcalobj_text;
+
+    //Scoring System
+    public Text ScoreGameInfo_text;
+    public int count_Minigames; 
 
     // Start is called before the first frame update
     void Start()
@@ -40,13 +47,19 @@ public class HubScript : MonoBehaviour
 
         calendar.PlayerActivityDays = tempPlayer.ActivityRegister;
 
-        UpdateScreenInfo();
+        CreateMinigamePlayerInfo();
 
-        //calendar.PlayerActivityDays = tempPlayer.ActivityRegister;
-        //print(tempPlayer.ActivityRegister.Count);
-        //CheckIfCreateNewDay(tempPlayer.ActivityRegister[tempPlayer.ActivityRegister.Count]);
+        UpdateScreenInfo();
     }
 
+    string DisplayTime(float timeToDisplay)
+    {
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        string _displayTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        return _displayTime;
+    }
     public void AddWeight()
     {
         tempPlayer.weight += 1;
@@ -90,30 +103,64 @@ public class HubScript : MonoBehaviour
     }
     public void UpdateScreenInfo()
     {
-        if(main_Screen.activeSelf)
+        if(screens_List[1].activeSelf)
         {
             mainusername_text.text = tempPlayer.name;
             mainKcal_text.text = "Kcal burnt today: " + tempPlayer.TodayBurntKcal + " / " + tempPlayer.KcalObjective;
             activitytime_text.text = "Activity time: " + tempPlayer.TodayActivityTime/60 + " min";
         }
+        if(screens_List[0].activeSelf)
+        {
+            weight_text.text = tempPlayer.weight + " Kg";
+            age_text.text = tempPlayer.age + "";
+            kcalobj_text.text = tempPlayer.KcalObjective + "";
+        }
     }
 
-    public void OpenCreationScreen()
+    public void OpenScreen(int _gameUID)
     {
-        usercreation_Screen.SetActive(true);
-        main_Screen.SetActive(false);
+        for(int i = 0; i < screens_List.Count; i++)
+        {
+            screens_List[i].SetActive(false);
+        }
+
+        screens_List[_gameUID].SetActive(true);
     }
-    
-    public void OpenMainScreen()
+
+    public void OpenPanel(int _gameUID)
     {
-        usercreation_Screen.SetActive(false);
-        main_Screen.SetActive(true);
+        for (int i = 0; i < infoPanels_List.Count; i++)
+        {
+            infoPanels_List[i].SetActive(false);
+        }
+        infoPanels_List[_gameUID].SetActive(true);
+        WriteScoreInfo(_gameUID);
+    }
+
+    void WriteScoreInfo(int _gameUID)
+    {
+        ScoreGameInfo_text.gameObject.SetActive(true);
+        ScoreGameInfo_text.text = "Max Score: " + tempPlayer.MinigamesInfo[_gameUID].MaxScore +
+            "\n Max Time: " + DisplayTime(tempPlayer.MinigamesInfo[_gameUID].MaxTime);
+    }
+
+    public void CloseAllPanels()
+    {
+        for (int i = 0; i < infoPanels_List.Count; i++)
+        {
+            infoPanels_List[i].SetActive(false);
+        }
+        ScoreGameInfo_text.gameObject.SetActive(false);
     }
 
     void CreateNewUser()
     {
-        usercreation_Screen.SetActive(true);
-        main_Screen.SetActive(false);
+        for (int i = 0; i < screens_List.Count; i++)
+        {
+            screens_List[i].SetActive(false);
+        }
+
+        screens_List[0].SetActive(true);
 
         json.SavePlayerToJson(new SportPlayer()); //create player default values
 
@@ -124,7 +171,7 @@ public class HubScript : MonoBehaviour
         if (_lastday.year != DateTime.Today.Year || _lastday.month != DateTime.Today.Month || _lastday.day != DateTime.Today.Day)
         {
             //Save last day exercise
-            _lastday.EnergyBurnt = tempPlayer.TodayBurntKcal;
+            _lastday.EnergyBurnt = (int)tempPlayer.TodayBurntKcal;
             _lastday.ActivityTime = tempPlayer.TodayActivityTime; 
             if (tempPlayer.TodayBurntKcal >= tempPlayer.KcalObjective)
                 _lastday.ObjectiveReached = true; 
@@ -141,4 +188,21 @@ public class HubScript : MonoBehaviour
             Debug.Log("New day created");
         }
     }
+
+    //This function adds new minigame score info inside the player. Is thinked to be used in a future, every time a minigame is created.
+    void CreateMinigamePlayerInfo()
+    {
+        if (tempPlayer.numMinigames < count_Minigames)
+        {
+            tempPlayer.MinigamesInfo.Add(new MiniGameInfo(tempPlayer.numMinigames));
+            tempPlayer.numMinigames++;
+
+            CreateMinigamePlayerInfo();
+        }
+        else
+        {
+            return;
+        }
+    }
+    
 }

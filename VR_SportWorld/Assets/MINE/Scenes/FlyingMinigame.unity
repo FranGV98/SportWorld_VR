@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.096134104, g: 0.012045233, b: 0.26665145, a: 1}
+  m_IndirectSpecularColor: {r: 0.009279733, g: 0.00091669156, b: 0.056880802, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,28 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &10564656 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8476755558671454308, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
-  m_PrefabInstance: {fileID: 8301838098356485775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &10564657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8476755558133036737, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
-  m_PrefabInstance: {fileID: 8301838098356485775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &10564658 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8476755558413837358, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
@@ -3173,7 +3151,7 @@ MonoBehaviour:
   go_Camera: {fileID: 7836131349198263290}
   go_R_Hand: {fileID: 1300986081}
   go_L_Hand: {fileID: 891630160}
-  WingForce: 4
+  WingForce: 4.81
 --- !u!136 &812066503827160465
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3761,7 +3739,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 7836131349198263294}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4119,12 +4097,11 @@ MonoBehaviour:
   text_score: {fileID: 468023415}
   text_kcal: {fileID: 8301838098356485777}
   text_timer: {fileID: 8301838098356485776}
-  text_endscore: {fileID: 10564658}
-  text_endtime: {fileID: 10564657}
-  text_endkcal: {fileID: 10564656}
+  text_final: {fileID: 10564658}
   go_pauseScreen: {fileID: 1982185389}
   go_endScreen: {fileID: 10564659}
   go_uiHelpers: {fileID: 812066503849798955}
+  gameUID: 2
   currentMinigame: 2
 --- !u!114 &7836131349174945564
 MonoBehaviour:
@@ -4521,6 +4498,14 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3832042984393291684, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadFlyingGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042613687684184688, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 7836131349198263294}
     - target: {fileID: 8301838097450914990, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4573,6 +4558,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7836131349198263294}
+    - target: {fileID: 8476755559184289997, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadFlyingGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476755559250869240, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8301838098356485778}
     - target: {fileID: 8906000339678477098, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 3.41
@@ -4615,5 +4608,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8301838098356485778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3442342944905234199, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+  m_PrefabInstance: {fileID: 8301838098356485775}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9cfc664619c374c8ac3dd6a50e37e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

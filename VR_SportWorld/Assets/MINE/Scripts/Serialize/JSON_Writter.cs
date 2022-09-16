@@ -43,6 +43,7 @@ public class JSON_Writter : MonoBehaviour
     public SportPlayer LoadPlayerFromJson()
     {
         using StreamReader reader = new StreamReader(directorypath + "/playerdata.json");
+        print(directorypath);
         string json = reader.ReadToEnd();
         reader.Close();
         //string json = File.ReadAllText(path);
