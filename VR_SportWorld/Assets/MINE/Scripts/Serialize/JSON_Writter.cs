@@ -6,7 +6,7 @@ using UnityEngine;
 public class JSON_Writter : MonoBehaviour
 {
     // Start is called before the first frame update
-    public string directorypath;
+    string directorypath;
 
     void Start()
     {

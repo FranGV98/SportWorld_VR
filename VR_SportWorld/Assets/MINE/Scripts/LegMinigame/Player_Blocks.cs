@@ -12,6 +12,7 @@ public class Player_Blocks : MonoBehaviour
     private BlockManager _blockManager;
 
     public AudioSource ScoreSFX, DeathSFX;
+
     void Start()
     {
         _blockManager = GameObject.Find("Blocks_Manager").GetComponent<BlockManager>();
@@ -66,7 +67,6 @@ public class Player_Blocks : MonoBehaviour
         {
             _blockManager.fl_playerHeigth = transform.position.y;
             HUD.SetActive(false);
-            print(transform.position.y);
             Destroy(other.gameObject);
         }
     }

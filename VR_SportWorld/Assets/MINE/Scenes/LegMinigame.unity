@@ -436,7 +436,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.34534, y: 0.11880387, z: 0.34534}
-  m_Children: []
+  m_Children:
+  - {fileID: 842749839}
   m_Father: {fileID: 2049876954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -659,6 +660,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &386254853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7201497389476816292, guid: 7071d122db2fc99449b76249aac5377b, type: 3}
+  m_PrefabInstance: {fileID: 386254847}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c06b7a03e2f31418579c2b46abd102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &386254855 stripped
@@ -1341,16 +1353,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842749838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65657, y: 0.65657, z: 0.65657}
+  m_LocalScale: {x: 1.9012277, y: 5.526504, z: 1.9012277}
   m_Children: []
-  m_Father: {fileID: 2049876954}
-  m_RootOrder: 1
+  m_Father: {fileID: 232882576}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.5018954, y: -198.64655}
   m_SizeDelta: {x: 1113.2, y: 208.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842749840
@@ -1748,6 +1760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigTunnel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0568886d48276024d952f17739102574, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0568886d48276024d952f17739102574, type: 3}
 --- !u!4 &1670968752 stripped
@@ -1800,7 +1816,7 @@ MonoBehaviour:
   go_pauseScreen: {fileID: 386254851}
   go_endScreen: {fileID: 386254855}
   go_uiHelpers: {fileID: 208722092}
-  _json: {fileID: 0}
+  _json: {fileID: 386254853}
   gameUID: 0
   currentMinigame: 0
 --- !u!1001 &1703012137
@@ -2357,7 +2373,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 232882576}
-  - {fileID: 842749839}
   m_Father: {fileID: 669157471}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -180,11 +180,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7570}
     - Class: 114
-      Script: {instanceID: 8068}
+      Script: {instanceID: 8066}
     - Class: 114
-      Script: {instanceID: 8614}
+      Script: {instanceID: 8612}
     - Class: 114
-      Script: {instanceID: 8732}
+      Script: {instanceID: 8730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -315,11 +315,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7570}
     - Class: 114
-      Script: {instanceID: 8614}
+      Script: {instanceID: 8612}
     - Class: 114
-      Script: {instanceID: 8738}
+      Script: {instanceID: 8736}
     - Class: 114
-      Script: {instanceID: 8958}
+      Script: {instanceID: 8954}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -440,7 +440,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7570}
     - Class: 114
-      Script: {instanceID: 8614}
+      Script: {instanceID: 8612}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -567,7 +567,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7570}
     - Class: 114
-      Script: {instanceID: 8614}
+      Script: {instanceID: 8612}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1579,7 +1579,7 @@ ScriptsOnlyBuild:
     className: HandPoseInputDevice
   - hash:
       serializedVersion: 2
-      Hash: 064df0835a12787eb6ecbad70be935a2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JSON_Writter
@@ -4499,4 +4499,4 @@ ScriptsOnlyBuild:
   - Assets/MINE/Scenes/LegMinigame.unity
   - Assets/MINE/Scenes/TennisMinigame.unity
   - Assets/MINE/Scenes/FlyingMinigame.unity
-  playerPath: C:/Users/frang/Documents/GitHub/TFG_VR_SportGame/VR_SportWorld/SportsWorldVR.apk
+  playerPath: C:/Users/frang/Desktop/SportsWorldVR.apk

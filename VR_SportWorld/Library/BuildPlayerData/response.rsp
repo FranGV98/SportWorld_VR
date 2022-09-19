@@ -14,6 +14,7 @@
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Unity.XR.ARSubsystems.dll"
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Facebook.Wit.TTS.dll"
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Oculus.Interaction.Samples.dll"
+-a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Unity.XR.WindowsMixedReality.dll"
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Oculus.Spatializer.dll"
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\UnityEngine.TestRunner.dll"
 -a="C:\Users\frang\Documents\GitHub\TFG_VR_SportGame\VR_SportWorld\Library\PlayerScriptAssemblies\Unity.Timeline.dll"

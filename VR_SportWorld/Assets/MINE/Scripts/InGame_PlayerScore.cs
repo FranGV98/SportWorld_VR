@@ -39,11 +39,18 @@ public class InGame_PlayerScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fl_timer += Time.deltaTime;
-        fl_kcal = (fl_timer / 60) * 5 * 3.5f * (float)tempPlayer.weight / 200; //MET FORMULA: minutes * MET * 3.5 * Kg / 200
+        if(tempPlayer == null)
+        {
+            tempPlayer = _json.LoadPlayerFromJson();
+        }
+        else
+        {
+            fl_timer += Time.deltaTime;
+            fl_kcal = (fl_timer / 60) * 5 * 3.5f * (float)tempPlayer.weight / 200; //MET FORMULA: minutes * MET * 3.5 * Kg / 200
 
-        text_timer.text = "Time: " + DisplayTime(fl_timer);
-        text_kcal.text = "Energy: " + fl_kcal.ToString("0.0 kcal");
+            text_timer.text = "Time: " + DisplayTime(fl_timer);
+            text_kcal.text = "Energy: " + fl_kcal.ToString("0.0 kcal");
+        }    
     }
 
     public void EndGame()
