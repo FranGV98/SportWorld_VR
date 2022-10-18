@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 79c9a14d08393f34b9822b9a8a7cb979
+timeCreated: 1513779279
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Amiibo002
+    100002: Armario
+    100004: Bajocolchon
+    100006: Bajocolchon002
+    100008: Box008
+    100010: Box012
+    100012: Box018
+    100014: Box019
+    100016: Box020
+    100018: Box022
+    100020: CAJONES PS4
+    100022: Cinema
+    100024: Cylinder004
+    100026: Cylinder005
+    100028: Cylinder006
+    100030: Cylinder008
+    100032: Escritorio
+    100034: Estante
+    100036: EstanteHomeCinema
+    100038: Finestra
+    100040: HomeCinemaTower
+    100042: HomeCinemaTower001
+    100044: HomeCinemaTower002
+    100046: HomeCinemaTower003
+    100048: Lamp
+    100050: Lamp001
+    100052: Lamp002
+    100054: Lamp003
+    100056: Lamp004
+    100058: Line001
+    100060: manga standard015
+    100062: manga standard016
+    100064: manga standard017
+    100066: manga standard018
+    100068: manga standard019
+    100070: manga standard020
+    100072: manga standard021
+    100074: manga standard022
+    100076: manga standard023
+    100078: manga standard024
+    100080: manga standard025
+    100082: manga standard026
+    100084: manga standard027
+    100086: manga standard028
+    100088: manga standard029
+    100090: manga standard030
+    100092: manga standard031
+    100094: manga standard032
+    100096: manga standard033
+    100098: manga standard034
+    100100: manga standard035
+    100102: manga standard036
+    100104: manga standard037
+    100106: manga standard038
+    100108: manga standard039
+    100110: manga standard040
+    100112: manga standard041
+    100114: manga standard042
+    100116: manga standard043
+    100118: manga standard044
+    100120: manga standard045
+    100122: manga standard046
+    100124: manga standard047
+    100126: manga standard048
+    100128: manga standard049
+    100130: manga standard050
+    100132: manga standard051
+    100134: manga standard052
+    100136: manga standard053
+    100138: manga standard054
+    100140: manga standard055
+    100142: manga standard056
+    100144: manga standard057
+    100146: manga standard058
+    100148: manga standard059
+    100150: manga standard060
+    100152: manga standard061
+    100154: manga standard062
+    100156: manga standard063
+    100158: manga standard064
+    100160: manga standard065
+    100162: manga standard067
+    100164: Monitor
+    100166: Monitor001
+    100168: Monitor002
+    100170: Monitor003
+    100172: Mouse
+    100174: NX Dock
+    100176: NX001
+    100178: PC
+    100180: Plane002
+    100182: pROYECTOR
+    100184: //RootNode
+    100186: Suelo
+    100188: Techo
+    100190: Text001
+    100192: Valcon
+    100194: W023
+    100196: wii
+    400000: Amiibo002
+    400002: Armario
+    400004: Bajocolchon
+    400006: Bajocolchon002
+    400008: Box008
+    400010: Box012
+    400012: Box018
+    400014: Box019
+    400016: Box020
+    400018: Box022
+    400020: CAJONES PS4
+    400022: Cinema
+    400024: Cylinder004
+    400026: Cylinder005
+    400028: Cylinder006
+    400030: Cylinder008
+    400032: Escritorio
+    400034: Estante
+    400036: EstanteHomeCinema
+    400038: Finestra
+    400040: HomeCinemaTower
+    400042: HomeCinemaTower001
+    400044: HomeCinemaTower002
+    400046: HomeCinemaTower003
+    400048: Lamp
+    400050: Lamp001
+    400052: Lamp002
+    400054: Lamp003
+    400056: Lamp004
+    400058: Line001
+    400060: manga standard015
+    400062: manga standard016
+    400064: manga standard017
+    400066: manga standard018
+    400068: manga standard019
+    400070: manga standard020
+    400072: manga standard021
+    400074: manga standard022
+    400076: manga standard023
+    400078: manga standard024
+    400080: manga standard025
+    400082: manga standard026
+    400084: manga standard027
+    400086: manga standard028
+    400088: manga standard029
+    400090: manga standard030
+    400092: manga standard031
+    400094: manga standard032
+    400096: manga standard033
+    400098: manga standard034
+    400100: manga standard035
+    400102: manga standard036
+    400104: manga standard037
+    400106: manga standard038
+    400108: manga standard039
+    400110: manga standard040
+    400112: manga standard041
+    400114: manga standard042
+    400116: manga standard043
+    400118: manga standard044
+    400120: manga standard045
+    400122: manga standard046
+    400124: manga standard047
+    400126: manga standard048
+    400128: manga standard049
+    400130: manga standard050
+    400132: manga standard051
+    400134: manga standard052
+    400136: manga standard053
+    400138: manga standard054
+    400140: manga standard055
+    400142: manga standard056
+    400144: manga standard057
+    400146: manga standard058
+    400148: manga standard059
+    400150: manga standard060
+    400152: manga standard061
+    400154: manga standard062
+    400156: manga standard063
+    400158: manga standard064
+    400160: manga standard065
+    400162: manga standard067
+    400164: Monitor
+    400166: Monitor001
+    400168: Monitor002
+    400170: Monitor003
+    400172: Mouse
+    400174: NX Dock
+    400176: NX001
+    400178: PC
+    400180: Plane002
+    400182: pROYECTOR
+    400184: //RootNode
+    400186: Suelo
+    400188: Techo
+    400190: Text001
+    400192: Valcon
+    400194: W023
+    400196: wii
+    2300000: Amiibo002
+    2300002: Armario
+    2300004: Bajocolchon
+    2300006: Bajocolchon002
+    2300008: Box008
+    2300010: Box012
+    2300012: Box018
+    2300014: Box019
+    2300016: Box020
+    2300018: Box022
+    2300020: CAJONES PS4
+    2300022: Cinema
+    2300024: Cylinder004
+    2300026: Cylinder005
+    2300028: Cylinder006
+    2300030: Cylinder008
+    2300032: Escritorio
+    2300034: Estante
+    2300036: EstanteHomeCinema
+    2300038: Finestra
+    2300040: HomeCinemaTower
+    2300042: HomeCinemaTower001
+    2300044: HomeCinemaTower002
+    2300046: HomeCinemaTower003
+    2300048: Lamp
+    2300050: Lamp001
+    2300052: Lamp002
+    2300054: Lamp003
+    2300056: Lamp004
+    2300058: Line001
+    2300060: manga standard015
+    2300062: manga standard016
+    2300064: manga standard017
+    2300066: manga standard018
+    2300068: manga standard019
+    2300070: manga standard020
+    2300072: manga standard021
+    2300074: manga standard022
+    2300076: manga standard023
+    2300078: manga standard024
+    2300080: manga standard025
+    2300082: manga standard026
+    2300084: manga standard027
+    2300086: manga standard028
+    2300088: manga standard029
+    2300090: manga standard030
+    2300092: manga standard031
+    2300094: manga standard032
+    2300096: manga standard033
+    2300098: manga standard034
+    2300100: manga standard035
+    2300102: manga standard036
+    2300104: manga standard037
+    2300106: manga standard038
+    2300108: manga standard039
+    2300110: manga standard040
+    2300112: manga standard041
+    2300114: manga standard042
+    2300116: manga standard043
+    2300118: manga standard044
+    2300120: manga standard045
+    2300122: manga standard046
+    2300124: manga standard047
+    2300126: manga standard048
+    2300128: manga standard049
+    2300130: manga standard050
+    2300132: manga standard051
+    2300134: manga standard052
+    2300136: manga standard053
+    2300138: manga standard054
+    2300140: manga standard055
+    2300142: manga standard056
+    2300144: manga standard057
+    2300146: manga standard058
+    2300148: manga standard059
+    2300150: manga standard060
+    2300152: manga standard061
+    2300154: manga standard062
+    2300156: manga standard063
+    2300158: manga standard064
+    2300160: manga standard065
+    2300162: manga standard067
+    2300164: Monitor
+    2300166: Monitor001
+    2300168: Monitor002
+    2300170: Monitor003
+    2300172: Mouse
+    2300174: NX Dock
+    2300176: NX001
+    2300178: PC
+    2300180: Plane002
+    2300182: pROYECTOR
+    2300184: Suelo
+    2300186: Techo
+    2300188: Text001
+    2300190: Valcon
+    2300192: W023
+    2300194: wii
+    3300000: Amiibo002
+    3300002: Armario
+    3300004: Bajocolchon
+    3300006: Bajocolchon002
+    3300008: Box008
+    3300010: Box012
+    3300012: Box018
+    3300014: Box019
+    3300016: Box020
+    3300018: Box022
+    3300020: CAJONES PS4
+    3300022: Cinema
+    3300024: Cylinder004
+    3300026: Cylinder005
+    3300028: Cylinder006
+    3300030: Cylinder008
+    3300032: Escritorio
+    3300034: Estante
+    3300036: EstanteHomeCinema
+    3300038: Finestra
+    3300040: HomeCinemaTower
+    3300042: HomeCinemaTower001
+    3300044: HomeCinemaTower002
+    3300046: HomeCinemaTower003
+    3300048: Lamp
+    3300050: Lamp001
+    3300052: Lamp002
+    3300054: Lamp003
+    3300056: Lamp004
+    3300058: Line001
+    3300060: manga standard015
+    3300062: manga standard016
+    3300064: manga standard017
+    3300066: manga standard018
+    3300068: manga standard019
+    3300070: manga standard020
+    3300072: manga standard021
+    3300074: manga standard022
+    3300076: manga standard023
+    3300078: manga standard024
+    3300080: manga standard025
+    3300082: manga standard026
+    3300084: manga standard027
+    3300086: manga standard028
+    3300088: manga standard029
+    3300090: manga standard030
+    3300092: manga standard031
+    3300094: manga standard032
+    3300096: manga standard033
+    3300098: manga standard034
+    3300100: manga standard035
+    3300102: manga standard036
+    3300104: manga standard037
+    3300106: manga standard038
+    3300108: manga standard039
+    3300110: manga standard040
+    3300112: manga standard041
+    3300114: manga standard042
+    3300116: manga standard043
+    3300118: manga standard044
+    3300120: manga standard045
+    3300122: manga standard046
+    3300124: manga standard047
+    3300126: manga standard048
+    3300128: manga standard049
+    3300130: manga standard050
+    3300132: manga standard051
+    3300134: manga standard052
+    3300136: manga standard053
+    3300138: manga standard054
+    3300140: manga standard055
+    3300142: manga standard056
+    3300144: manga standard057
+    3300146: manga standard058
+    3300148: manga standard059
+    3300150: manga standard060
+    3300152: manga standard061
+    3300154: manga standard062
+    3300156: manga standard063
+    3300158: manga standard064
+    3300160: manga standard065
+    3300162: manga standard067
+    3300164: Monitor
+    3300166: Monitor001
+    3300168: Monitor002
+    3300170: Monitor003
+    3300172: Mouse
+    3300174: NX Dock
+    3300176: NX001
+    3300178: PC
+    3300180: Plane002
+    3300182: pROYECTOR
+    3300184: Suelo
+    3300186: Techo
+    3300188: Text001
+    3300190: Valcon
+    3300192: W023
+    3300194: wii
+    4300000: Escritorio
+    4300002: Mouse
+    4300004: Amiibo002
+    4300006: NX Dock
+    4300008: PC
+    4300010: Lamp
+    4300012: Cinema
+    4300014: pROYECTOR
+    4300016: Cylinder004
+    4300018: Estante
+    4300020: Box008
+    4300022: Cylinder005
+    4300024: Cylinder006
+    4300026: CAJONES PS4
+    4300028: manga standard015
+    4300030: wii
+    4300032: Box018
+    4300034: Armario
+    4300036: manga standard016
+    4300038: manga standard017
+    4300040: manga standard018
+    4300042: manga standard019
+    4300044: manga standard020
+    4300046: manga standard021
+    4300048: manga standard022
+    4300050: manga standard023
+    4300052: manga standard024
+    4300054: manga standard025
+    4300056: manga standard026
+    4300058: manga standard027
+    4300060: manga standard028
+    4300062: manga standard029
+    4300064: manga standard030
+    4300066: manga standard031
+    4300068: manga standard032
+    4300070: Bajocolchon
+    4300072: Bajocolchon002
+    4300074: Box019
+    4300076: Plane002
+    4300078: Box020
+    4300080: manga standard033
+    4300082: manga standard034
+    4300084: manga standard035
+    4300086: manga standard036
+    4300088: manga standard037
+    4300090: manga standard038
+    4300092: manga standard039
+    4300094: manga standard040
+    4300096: manga standard041
+    4300098: manga standard042
+    4300100: manga standard043
+    4300102: manga standard044
+    4300104: manga standard045
+    4300106: manga standard046
+    4300108: manga standard047
+    4300110: manga standard048
+    4300112: manga standard049
+    4300114: manga standard050
+    4300116: manga standard051
+    4300118: manga standard052
+    4300120: manga standard053
+    4300122: manga standard054
+    4300124: manga standard055
+    4300126: manga standard056
+    4300128: manga standard057
+    4300130: manga standard058
+    4300132: manga standard059
+    4300134: manga standard060
+    4300136: manga standard061
+    4300138: manga standard062
+    4300140: manga standard063
+    4300142: manga standard064
+    4300144: manga standard065
+    4300146: manga standard067
+    4300148: Monitor
+    4300150: Monitor001
+    4300152: Monitor002
+    4300154: Monitor003
+    4300156: EstanteHomeCinema
+    4300158: Line001
+    4300160: Text001
+    4300162: HomeCinemaTower
+    4300164: Cylinder008
+    4300166: Box022
+    4300168: NX001
+    4300170: W023
+    4300172: Box012
+    4300174: Finestra
+    4300176: Techo
+    4300178: Suelo
+    4300180: HomeCinemaTower001
+    4300182: Lamp001
+    4300184: Lamp002
+    4300186: Valcon
+    4300188: Lamp003
+    4300190: Lamp004
+    4300192: HomeCinemaTower002
+    4300194: HomeCinemaTower003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

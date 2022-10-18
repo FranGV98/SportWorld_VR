@@ -14,5 +14,10 @@ public class BlockMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(-Vector3.forward * Time.deltaTime * BlockSpeed);
+
+        if(transform.position.z < -8)
+        {
+            Destroy(gameObject);
+        }
     }
 }

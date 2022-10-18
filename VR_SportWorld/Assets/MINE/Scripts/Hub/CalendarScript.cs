@@ -6,6 +6,23 @@ using UnityEngine.UI;
 
 public class CalendarScript : MonoBehaviour
 {
+    public class NeonColor
+    {
+        public Color neonPink;
+        public Color neonGrey;
+        public Color neonBlue;
+        public Color neonGreen;
+
+
+        public NeonColor()
+        {
+            neonPink = new Color(1f,0.44f,0.75f);
+            neonGrey = new Color(0.44f,0.22f,0.33f);
+            neonBlue = new Color(.28f,0.7f,1f);
+            neonGreen = new Color(.28f,1,0.6f);
+        }
+
+    }
     /// <summary>
     /// Cell or slot in the calendar. All the information each day should now about itself
     /// </summary>
@@ -43,8 +60,9 @@ public class CalendarScript : MonoBehaviour
         /// </summary>
         public void UpdateDay(int newDayNum)
         {
+            NeonColor neonColor = new NeonColor();
             this.dayNum = newDayNum;
-            if (dayColor == Color.white || dayColor == Color.green)
+            if (dayColor == neonColor.neonPink || dayColor == neonColor.neonGreen)
             {
                 obj.GetComponentInChildren<Text>().text = (dayNum + 1).ToString();
             }
@@ -101,7 +119,7 @@ public class CalendarScript : MonoBehaviour
         MonthAndYear.text = temp.ToString("MMMM") + " " + temp.Year.ToString();
         int startDay = GetMonthStartDay(year, month);
         int endDay = GetTotalNumberOfDays(year, month);
-
+        NeonColor neonColor = new NeonColor();
 
         ///Create the days
         ///This only happens for our first Update Calendar when we have no Day objects therefore we must create them
@@ -116,16 +134,16 @@ public class CalendarScript : MonoBehaviour
                     int currDay = (w * 7) + i;
                     if (currDay < startDay || currDay - startDay >= endDay)
                     {
-                        newDay = new Day(currDay - startDay, Color.grey, weeks[w].GetChild(i).gameObject);
+                        newDay = new Day(currDay - startDay, neonColor.neonGrey, weeks[w].GetChild(i).gameObject);
                     }
                     else
                     {
-                        newDay = new Day(currDay - startDay, Color.white, weeks[w].GetChild(i).gameObject);
+                        newDay = new Day(currDay - startDay, neonColor.neonPink, weeks[w].GetChild(i).gameObject);
                         for (int j = 0; j < PlayerActivityDays.Count; j++)
                         {
                             if (PlayerActivityDays[j].year == year && PlayerActivityDays[j].month == month && PlayerActivityDays[j].day == (currDay - startDay) + 1 && PlayerActivityDays[j].ObjectiveReached == true)
                             {
-                                newDay = new Day(currDay - startDay, Color.green, weeks[w].GetChild(i).gameObject);
+                                newDay = new Day(currDay - startDay, neonColor.neonGreen, weeks[w].GetChild(i).gameObject);
                             }
                         }
                     }
@@ -141,11 +159,11 @@ public class CalendarScript : MonoBehaviour
             {
                 if (i < startDay || i - startDay >= endDay)
                 {
-                    days[i].UpdateColor(Color.grey);
+                    days[i].UpdateColor(neonColor.neonGrey);
                 }
                 else
                 {               
-                    days[i].UpdateColor(Color.white);
+                    days[i].UpdateColor(neonColor.neonPink);
                 }
 
                 days[i].UpdateDay(i - startDay);
@@ -154,7 +172,7 @@ public class CalendarScript : MonoBehaviour
                 {
                     if (PlayerActivityDays[j].year == year && PlayerActivityDays[j].month == month && PlayerActivityDays[j].day == (i - startDay) +1 && PlayerActivityDays[j].ObjectiveReached == true)
                     {
-                        days[i].UpdateColor(Color.green);
+                        days[i].UpdateColor(neonColor.neonGreen);
                     }
                 }
             }
@@ -163,7 +181,7 @@ public class CalendarScript : MonoBehaviour
         ///This just checks if today is on our calendar. If so, we highlight it in green
         if (DateTime.Now.Year == year && DateTime.Now.Month == month)
         {
-            days[(DateTime.Now.Day - 1) + startDay].UpdateColor(new Color(0.3f, 0.6f,0.6f));
+            days[(DateTime.Now.Day - 1) + startDay].UpdateColor(neonColor.neonBlue);
         }
 
     }
