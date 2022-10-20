@@ -94,7 +94,7 @@ public class FlyingPlayer : MonoBehaviour
 
         var FrontDist = Vector3.Distance(NoYRealHandpos, NoYFrontRefPos);
 
-        if (FrontDist < 0.6)
+        if (FrontDist < 0.5f)
         {            
             Vector3 FlightHorForce = (pos_rotReference.transform.forward * Mathf.Abs(speedMagnitude) * 5) * -1;
             _rigidbody.AddForce(FlightHorForce);

@@ -1,0 +1,670 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1666256179301839, "dur": 1634620, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256179302091, "dur": 8707, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256179310802, "dur": 31100, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256179341905, "dur": 546046, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256179887955, "dur": 1035913, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256180923870, "dur": 12587, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256180937604, "dur": 12, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1666256179729249, "dur": 135885, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179730185, "dur": 40191, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179849258, "dur": 5249, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179854515, "dur": 10612, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179855206, "dur": 9206, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179872704, "dur": 6063, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1666256179868410, "dur": 10441, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256180937704, "dur": 161, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1666256179933043, "dur":1582, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256179934630, "dur":106, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1666256179934766, "dur":21, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1666256179934788, "dur":405, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1666256179935211, "dur":567, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256179935778, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901081, "dur":212, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901293, "dur":35, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901328, "dur":22, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901350, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901359, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901360, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901366, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901367, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901374, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901375, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901380, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901381, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901385, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901386, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901391, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901392, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901396, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901397, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901405, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901406, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901410, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901411, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901416, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901417, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901422, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901423, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901427, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901428, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901433, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901434, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901438, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901439, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901445, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901454, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180901525, "dur":1894, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1666256179935500, "dur":316, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256179935816, "dur":4200, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256179940018, "dur":11732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1666256179951754, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256179951766, "dur":10610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1666256179962422, "dur":507287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666256180469712, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256180469716, "dur":25095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666256180494860, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666256180494967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256180494974, "dur":222463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1666256180717489, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1666256180717541, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256180717546, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1666256180721088, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level3" }}
+,{ "pid":12345, "tid":1, "ts":1666256180721134, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256180721140, "dur":8304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level3" }}
+,{ "pid":12345, "tid":1, "ts":1666256180729490, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1666256180729533, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1666256180729538, "dur":2826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1666256180732409, "dur":168668, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256179935408, "dur":384, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256179935792, "dur":4164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256179939958, "dur":10885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1666256179950846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256179950952, "dur":11069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1666256179962328, "dur":60993, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180023332, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180024007, "dur":56155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180080237, "dur":54464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180134705, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180134711, "dur":1471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180136231, "dur":49210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180185449, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180185463, "dur":21952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180207475, "dur":40026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180247508, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180247561, "dur":19734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180267357, "dur":45799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180313159, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180313166, "dur":11304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180324522, "dur":30913, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180355439, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180355450, "dur":23394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180378892, "dur":25174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180404071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180404081, "dur":3883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180408005, "dur":3505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180411517, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180411531, "dur":1814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180413389, "dur":54400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180467793, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180467801, "dur":2165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180470015, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180470102, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180470108, "dur":78314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180548584, "dur":83458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Spatializer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180632049, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180632061, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Spatializer.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180633248, "dur":20390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.Wit.TTS.Samples.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180653643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180653652, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.Wit.TTS.Samples.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180655314, "dur":26180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/AssistantCoreSDKRuntime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180681497, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180681505, "dur":2134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/AssistantCoreSDKRuntime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1666256180683688, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/UnitySubsystems/OculusXRPlugin/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":2, "ts":1666256180683746, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180684045, "dur":6071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/UnitySubsystems/OculusXRPlugin/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":2, "ts":1666256180690160, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666256180690201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1666256180690205, "dur":45327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1666256180735587, "dur":165513, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256179935435, "dur":362, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256179935797, "dur":4111, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256179939911, "dur":30362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1666256179970277, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256179970492, "dur":108572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1666256180079109, "dur":31500, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180110616, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180110625, "dur":4992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180115663, "dur":42771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180158442, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180158454, "dur":22106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180180610, "dur":24715, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180205335, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180205347, "dur":14385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180219777, "dur":51044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180270825, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180270833, "dur":33812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180304690, "dur":16326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180321020, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180321028, "dur":13473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180334553, "dur":42616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180377176, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180377187, "dur":1428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180378657, "dur":66751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180445415, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180445426, "dur":1406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180446872, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180446920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180446928, "dur":234384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180681363, "dur":13136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/InteractionSdk.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180694514, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180694797, "dur":2664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/InteractionSdk.dll" }}
+,{ "pid":12345, "tid":3, "ts":1666256180697608, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666256180697683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180697690, "dur":1481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666256180699214, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":3, "ts":1666256180699262, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180699265, "dur":7833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":3, "ts":1666256180707158, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1666256180707215, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180707219, "dur":4477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1666256180711764, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1666256180711913, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180711922, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1666256180713103, "dur":7716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1666256180720828, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180720840, "dur":6961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1666256180727868, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1666256180727926, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180727936, "dur":1375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1666256180729348, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666256180729392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1666256180729396, "dur":2668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1666256180732123, "dur":168956, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256179935383, "dur":400, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256179935784, "dur":4106, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256179939908, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1666256179939919, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256179941150, "dur":683, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1666256179941837, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1666256179941892, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256179942305, "dur":21766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1666256179964073, "dur":114446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180078523, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180078657, "dur":5574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180084281, "dur":14567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180098853, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180098860, "dur":2859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180101765, "dur":45273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180147043, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180147055, "dur":60539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180208314, "dur":87275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180295596, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180295607, "dur":27608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180323267, "dur":143568, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180466841, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180466850, "dur":1722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180468613, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180468703, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180468708, "dur":125199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180593957, "dur":63269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Interaction.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180657232, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180657243, "dur":2219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Interaction.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180659511, "dur":121235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180780751, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1666256180780760, "dur":1047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1666256180781852, "dur":119234, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256179935400, "dur":388, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256179935788, "dur":4233, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256179940023, "dur":734, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1666256179940761, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256179944612, "dur":19114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1666256179963781, "dur":114650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180078435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180078624, "dur":3804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180082477, "dur":19481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180101961, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180101971, "dur":2155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180104173, "dur":129598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180233775, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180233784, "dur":17729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180251563, "dur":152719, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180404285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180404299, "dur":15976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180420337, "dur":31907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180452248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180452254, "dur":2684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180454991, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180455152, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180455157, "dur":82805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180538014, "dur":254069, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.VR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180792093, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1666256180792104, "dur":3299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.VR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1666256180795484, "dur":105601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256179935428, "dur":367, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256179935795, "dur":4146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256179939944, "dur":357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1666256179940303, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256179950165, "dur":230268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1666256180180491, "dur":27681, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180208175, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256180208186, "dur":5210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180213441, "dur":75946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180289392, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256180289422, "dur":13138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180302611, "dur":263941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180566559, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256180566570, "dur":2066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180568678, "dur":55475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.LipSync.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180624157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256180624167, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.LipSync.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180625665, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180625853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1666256180625860, "dur":275154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1666256180901048, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":6, "ts":1666256180901050, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256179935453, "dur":350, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256179935803, "dur":4123, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256179939929, "dur":636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1666256179940568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256179944371, "dur":23266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1666256179967718, "dur":110691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180078417, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180078629, "dur":1872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180080549, "dur":78044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180158597, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180158604, "dur":15614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180174270, "dur":34209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180208483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180208513, "dur":6038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180214592, "dur":30846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180245448, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180245462, "dur":3156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180248878, "dur":74394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180323275, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180323283, "dur":27411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180350759, "dur":80900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Oculus.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180431666, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180431679, "dur":1460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Oculus.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180433186, "dur":19435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180452624, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180452655, "dur":2246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180454948, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180454997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180455002, "dur":141798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180596844, "dur":70909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.AudioManager.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180667756, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180667764, "dur":7928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.AudioManager.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180675764, "dur":5884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OculusXRPlugin.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180681651, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180683847, "dur":2088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OculusXRPlugin.dll" }}
+,{ "pid":12345, "tid":7, "ts":1666256180685990, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":7, "ts":1666256180686135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180686349, "dur":903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":7, "ts":1666256180687294, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":7, "ts":1666256180687341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180687391, "dur":2379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":7, "ts":1666256180689884, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":7, "ts":1666256180689934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180689943, "dur":7907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":7, "ts":1666256180697893, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1666256180697961, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180697968, "dur":9046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1666256180707068, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666256180707120, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180707130, "dur":2567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666256180709795, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666256180709901, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180709912, "dur":19005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1666256180728963, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1666256180729010, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1666256180729016, "dur":2266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1666256180731333, "dur":169749, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256179935473, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256179935808, "dur":4167, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256179939979, "dur":11102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1666256179951084, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256179951096, "dur":11965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1666256179963104, "dur":116235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1666256180079342, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180079347, "dur":2408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1666256180081807, "dur":16394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180098206, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180098217, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180099516, "dur":14870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180114392, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180114403, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180115400, "dur":30461, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180145868, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180145881, "dur":17094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180163022, "dur":36317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180199343, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180199351, "dur":14019, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180213408, "dur":43068, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180256485, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180256498, "dur":34296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180290843, "dur":27325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180318175, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180318211, "dur":46563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180364815, "dur":302310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180667131, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180667141, "dur":14422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180681614, "dur":179838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OVRLipSync.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180861459, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1666256180861468, "dur":16823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OVRLipSync.dll" }}
+,{ "pid":12345, "tid":8, "ts":1666256180878330, "dur":22750, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256179935492, "dur":320, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256179935812, "dur":4151, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256179939967, "dur":452, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1666256179940442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256179943510, "dur":18863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1666256179962422, "dur":304128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180266556, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180266648, "dur":8313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180275013, "dur":29318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180304338, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180304350, "dur":18214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180322639, "dur":21861, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180344507, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180344519, "dur":20137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180364701, "dur":139558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180504267, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180504275, "dur":1199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180505519, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180505564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180505570, "dur":211755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1666256180717377, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180717440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180717453, "dur":5143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180722649, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level2.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180722697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180722708, "dur":6303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level2.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180729067, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180729117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1666256180729122, "dur":7976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1666256180737147, "dur":163949, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256179935525, "dur":294, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256179935819, "dur":4096, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256179939916, "dur":227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1666256179940153, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256179947482, "dur":14597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1666256179962131, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1666256179962251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256179962257, "dur":219818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1666256180182124, "dur":46337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpatialTracking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180228836, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180228842, "dur":9538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.SpatialTracking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180238431, "dur":35332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180274187, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180274203, "dur":42688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180316939, "dur":19861, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180336805, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180336815, "dur":17609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180354470, "dur":83263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Interaction.Toolkit.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180437739, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180437750, "dur":1665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Interaction.Toolkit.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180439475, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180439532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180439541, "dur":94045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180533633, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180533737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180533746, "dur":91742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180625547, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180625699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180625771, "dur":42247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180668064, "dur":51121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OVRPlugin.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180719193, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180719207, "dur":8899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Plugins/x86_64/OVRPlugin.dll" }}
+,{ "pid":12345, "tid":10, "ts":1666256180728152, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level1" }}
+,{ "pid":12345, "tid":10, "ts":1666256180728196, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180728200, "dur":1460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/level1" }}
+,{ "pid":12345, "tid":10, "ts":1666256180729696, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1666256180729807, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1666256180729831, "dur":2456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/boot.config" }}
+,{ "pid":12345, "tid":10, "ts":1666256180732333, "dur":168768, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256179935549, "dur":273, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256179935823, "dur":4203, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256179940026, "dur":10878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1666256179950908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256179950973, "dur":11250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1666256179962284, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1666256179962404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256179962409, "dur":5767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1666256179968223, "dur":110186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180078417, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180078790, "dur":5419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180084263, "dur":16202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180100470, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180100478, "dur":1934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180102457, "dur":167232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180269692, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180269698, "dur":22937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180292701, "dur":28139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180320848, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180320863, "dur":33033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180353952, "dur":37224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Management.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180391183, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180391193, "dur":1029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.Management.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180392269, "dur":36267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180428544, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180428557, "dur":1280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180429883, "dur":23285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180453172, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180453179, "dur":15407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180468628, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180468714, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180468735, "dur":37350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180506472, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180506576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1666256180506582, "dur":240227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1666256180746853, "dur":154237, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256179935567, "dur":259, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256179935826, "dur":4108, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256179939936, "dur":10854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1666256179950793, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256179950806, "dur":12501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1666256179963363, "dur":550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld.exe" }}
+,{ "pid":12345, "tid":12, "ts":1666256179963915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256179963919, "dur":5000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld.exe" }}
+,{ "pid":12345, "tid":12, "ts":1666256179968961, "dur":109451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180078417, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180078637, "dur":3068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180081758, "dur":16446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180098207, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180098215, "dur":1320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180099580, "dur":29025, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180128612, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180128624, "dur":2173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180130842, "dur":102575, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180233423, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180233436, "dur":31389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180265033, "dur":25448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180290486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180290494, "dur":12228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180302798, "dur":37084, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180339891, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180339932, "dur":24067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180403891, "dur":44811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180448706, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180448715, "dur":2641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180451407, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180451485, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180451491, "dur":62650, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180514194, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180514323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180514338, "dur":35899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180550280, "dur":71757, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Platform.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180622044, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180622055, "dur":1452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Platform.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180623555, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180623677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1666256180623686, "dur":155017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":12, "ts":1666256180778750, "dur":122338, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256179935590, "dur":238, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256179935829, "dur":4090, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256179939923, "dur":10840, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":13, "ts":1666256179950767, "dur":51, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256179950829, "dur":12651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":13, "ts":1666256179963530, "dur":115009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/VoiceSDK.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180078542, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180080232, "dur":4727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/VoiceSDK.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180085010, "dur":51246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180136260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180136268, "dur":1095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180137459, "dur":50495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180188220, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180201175, "dur":42460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180243682, "dur":17982, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180261672, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180261686, "dur":60500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180322252, "dur":83436, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180405692, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180405749, "dur":1835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180407734, "dur":24876, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180432615, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180432624, "dur":1329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180433995, "dur":103809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180537810, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180537820, "dur":2079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180539941, "dur":50167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Voice.Demo.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180590114, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180590123, "dur":1964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Voice.Demo.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180592579, "dur":58622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Interaction.Samples.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180651210, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180651221, "dur":1602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Oculus.Interaction.Samples.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180652872, "dur":84737, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.Wit.TTS.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180737614, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1666256180737629, "dur":1211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.Wit.TTS.dll" }}
+,{ "pid":12345, "tid":13, "ts":1666256180738885, "dur":162211, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256179935610, "dur":222, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256179935832, "dur":4158, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256179939993, "dur":224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1666256179940220, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256179944748, "dur":18598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1666256179963390, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":14, "ts":1666256179963481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256179963702, "dur":115277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":14, "ts":1666256180079035, "dur":17127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180096170, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180096181, "dur":1077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180097304, "dur":63578, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180160888, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180160897, "dur":14639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180175580, "dur":75136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180250724, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180250735, "dur":16953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180267735, "dur":20103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180287849, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180287867, "dur":7314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180295238, "dur":16624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180311869, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180311882, "dur":10569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180322502, "dur":31804, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180354310, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180354322, "dur":8854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180363232, "dur":87454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.CoreUtils.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180450692, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180450704, "dur":875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.XR.CoreUtils.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180451621, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180451685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180451690, "dur":83666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180535401, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180535502, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180535508, "dur":90381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180625931, "dur":103747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.WitAI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180729681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1666256180729688, "dur":2191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Facebook.WitAI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1666256180731932, "dur":169152, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256179935629, "dur":207, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256179935836, "dur":4146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256179939984, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1666256179940192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256179943957, "dur":263809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1666256180207820, "dur":20708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180228537, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180228553, "dur":14134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180242733, "dur":19489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180262226, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180262236, "dur":28553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180290838, "dur":69875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180360720, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180360731, "dur":4231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180368249, "dur":35816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Subsystem.Registration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180404070, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180404079, "dur":915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Subsystem.Registration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180405035, "dur":74129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180479171, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180479191, "dur":1232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180480466, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180480573, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180480581, "dur":35769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180516397, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180516572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180516580, "dur":147736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180664364, "dur":31844, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180696221, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180696242, "dur":1376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":15, "ts":1666256180697662, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":15, "ts":1666256180697707, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180697712, "dur":1231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":15, "ts":1666256180698985, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":15, "ts":1666256180699033, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180699037, "dur":2131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":15, "ts":1666256180701209, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1666256180701251, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180701257, "dur":5893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1666256180707195, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1666256180707236, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1666256180707240, "dur":92369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1666256180799644, "dur":101438, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256179935647, "dur":192, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256179935839, "dur":4109, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256179939952, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1666256179940155, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256179947952, "dur":14150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1666256179962144, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":16, "ts":1666256179962244, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256179962252, "dur":8172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":16, "ts":1666256179970470, "dur":36717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180007195, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180007551, "dur":71436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180079033, "dur":31878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180110914, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180110921, "dur":1776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180113329, "dur":21340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180134678, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180134692, "dur":4304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180139046, "dur":59871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180198925, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180198938, "dur":14004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180212987, "dur":18072, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180231066, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180231077, "dur":12310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180243438, "dur":26228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180269673, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180269685, "dur":23077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180292816, "dur":20023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180312844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180312852, "dur":10290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180323188, "dur":40806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180363997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180364279, "dur":9489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180373836, "dur":78407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180452247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180452254, "dur":2403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180454702, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180454746, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180454754, "dur":171106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180625912, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180626015, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1666256180626020, "dur":167661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/frang/Desktop/PC_SPORTSWORLDVR/VR_SportWorld_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1666256180793731, "dur":107361, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1666256180905212, "dur":2212, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1666256180937916, "dur": 992, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1666256180937591, "dur": 1336, "ph": "X", "name": "Write chrome-trace events", "args": {} },

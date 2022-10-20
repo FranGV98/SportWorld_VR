@@ -109,7 +109,7 @@ public class HandPresence_Bhv : MonoBehaviour
                             break;
 
                         case InGame_PlayerScore.Minigame.RacketGame:
-                            TennisGameFeatures();
+                            //TennisGameFeatures();
                             break;
                     }
                 }

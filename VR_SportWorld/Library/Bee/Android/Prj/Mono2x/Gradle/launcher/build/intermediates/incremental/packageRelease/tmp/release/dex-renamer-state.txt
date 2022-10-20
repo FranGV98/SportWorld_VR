@@ -1,0 +1,4 @@
+#Thu Oct 20 10:10:36 CEST 2022
+base.0=C\:\\Users\\frang\\Documents\\GitHub\\TFG_VR_SportGame\\VR_SportWorld\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
